@@ -1,0 +1,2576 @@
+*** EVALUATION ***
+PROGRAM "C:\Users\yechang\Desktop\摩托车开发项目\02.摩托车项目初始资料\03.样例软件Install_Small_Engine_Software_Example\KIT33812ECUEVME Software Example V1\bin\Project.abs"
+
+*********************************************************************************************
+TARGET SECTION
+---------------------------------------------------------------------------------------------
+Processor   : Freescale HC12
+Memory Model: BANKED
+File Format : ELF\DWARF 2.0
+Linker      : SmartLinker V-5.0.36 Build 9056, Feb 26 2009
+
+*********************************************************************************************
+FILE SECTION
+---------------------------------------------------------------------------------------------
+Start12.c.o                             Model: BANKED,        Lang: ANSI-C
+ENGSTOPSW.c.o                           Model: BANKED,        Lang: ANSI-C
+Input_Output.c.o                        Model: BANKED,        Lang: ANSI-C
+MIL.c.o                                 Model: BANKED,        Lang: ANSI-C
+O2H.c.o                                 Model: BANKED,        Lang: ANSI-C
+Relays.c.o                              Model: BANKED,        Lang: ANSI-C
+MAP.c.o                                 Model: BANKED,        Lang: ANSI-C
+TPS.c.o                                 Model: BANKED,        Lang: ANSI-C
+VBAT.c.o                                Model: BANKED,        Lang: ANSI-C
+Crank_Sensing.c.o                       Model: BANKED,        Lang: ANSI-C
+Fuel_Control.c.o                        Model: BANKED,        Lang: ANSI-C
+Vectors.c.o                             Model: BANKED,        Lang: ANSI-C
+ADC.c.o                                 Model: BANKED,        Lang: ANSI-C
+Cpu.c.o                                 Model: BANKED,        Lang: ANSI-C
+MC33812.c.o                             Model: BANKED,        Lang: ANSI-C
+PWM.c.o                                 Model: BANKED,        Lang: ANSI-C
+Timers.c.o                              Model: BANKED,        Lang: ANSI-C
+Spark_Control.c.o                       Model: BANKED,        Lang: ANSI-C
+Application Map.c.o                     Model: BANKED,        Lang: ANSI-C
+Data Management.c.o                     Model: BANKED,        Lang: ANSI-C
+ECU Configuration.c.o                   Model: BANKED,        Lang: ANSI-C
+Engine Management.c.o                   Model: BANKED,        Lang: ANSI-C
+main.c.o                                Model: BANKED,        Lang: ANSI-C
+Scheduler.c.o                           Model: BANKED,        Lang: ANSI-C
+User Management.c.o                     Model: BANKED,        Lang: ANSI-C
+rtshc12.c.o (ansibi.lib)                Model: BANKED,        Lang: ANSI-C
+MC9S12P128.c.o                          Model: BANKED,        Lang: ANSI-C
+
+*********************************************************************************************
+STARTUP SECTION
+---------------------------------------------------------------------------------------------
+Entry point: 0xC000 (_Startup)
+_startupData is allocated at 0xC00F and uses 6 Bytes
+extern struct _tagStartup {
+  unsigned nofZeroOut     1
+  _Range   pZeroOut       0x2900     817
+  _Copy    *toCopyDownBeg 0xCB6F
+} _startupData;
+
+*********************************************************************************************
+SECTION-ALLOCATION SECTION
+Section Name                    Size  Type     From       To       Segment
+---------------------------------------------------------------------------------------------
+.init                             15     R     0xC000     0xC00E   ROM_C000
+.startData                        10     R     0xC00F     0xC018   ROM_C000
+.rodata                         1736     R     0xC019     0xC6E0   ROM_C000
+NON_BANKED                      1166     R     0xC6E1     0xCB6E   ROM_C000
+.copy                            177     R     0xCB6F     0xCC1F   ROM_C000
+.text                           4222     R    0x88000    0x8907D   PAGE_08
+.stack                           256   R/W     0x2800     0x28FF   RAM
+.data                            172   R/W     0x2900     0x29AB   RAM
+.abs_section_ff10                238     R     0xFF10     0xFFFD   .absSeg0
+.abs_section_8                     1   N/I        0x8        0x8   .absSeg1
+.abs_section_9                     1   N/I        0x9        0x9   .absSeg2
+.abs_section_b                     1   N/I        0xB        0xB   .absSeg3
+.abs_section_c                     1   N/I        0xC        0xC   .absSeg4
+.abs_section_d                     1   N/I        0xD        0xD   .absSeg5
+.abs_section_11                    1   N/I       0x11       0x11   .absSeg6
+.abs_section_13                    1   N/I       0x13       0x13   .absSeg7
+.abs_section_15                    1   N/I       0x15       0x15   .absSeg8
+.abs_section_1c                    1   N/I       0x1C       0x1C   .absSeg9
+.abs_section_1e                    1   N/I       0x1E       0x1E   .absSeg10
+.abs_section_20                    1   N/I       0x20       0x20   .absSeg11
+.abs_section_21                    1   N/I       0x21       0x21   .absSeg12
+.abs_section_22                    1   N/I       0x22       0x22   .absSeg13
+.abs_section_23                    1   N/I       0x23       0x23   .absSeg14
+.abs_section_26                    1   N/I       0x26       0x26   .absSeg15
+.abs_section_27                    1   N/I       0x27       0x27   .absSeg16
+.abs_section_28                    1   N/I       0x28       0x28   .absSeg17
+.abs_section_29                    1   N/I       0x29       0x29   .absSeg18
+.abs_section_2a                    1   N/I       0x2A       0x2A   .absSeg19
+.abs_section_2b                    1   N/I       0x2B       0x2B   .absSeg20
+.abs_section_2c                    1   N/I       0x2C       0x2C   .absSeg21
+.abs_section_2d                    1   N/I       0x2D       0x2D   .absSeg22
+.abs_section_2e                    1   N/I       0x2E       0x2E   .absSeg23
+.abs_section_2f                    1   N/I       0x2F       0x2F   .absSeg24
+.abs_section_34                    1   N/I       0x34       0x34   .absSeg25
+.abs_section_35                    1   N/I       0x35       0x35   .absSeg26
+.abs_section_36                    1   N/I       0x36       0x36   .absSeg27
+.abs_section_37                    1   N/I       0x37       0x37   .absSeg28
+.abs_section_38                    1   N/I       0x38       0x38   .absSeg29
+.abs_section_39                    1   N/I       0x39       0x39   .absSeg30
+.abs_section_3a                    1   N/I       0x3A       0x3A   .absSeg31
+.abs_section_3b                    1   N/I       0x3B       0x3B   .absSeg32
+.abs_section_3c                    1   N/I       0x3C       0x3C   .absSeg33
+.abs_section_3f                    1   N/I       0x3F       0x3F   .absSeg34
+.abs_section_40                    1   N/I       0x40       0x40   .absSeg35
+.abs_section_41                    1   N/I       0x41       0x41   .absSeg36
+.abs_section_42                    1   N/I       0x42       0x42   .absSeg37
+.abs_section_43                    1   N/I       0x43       0x43   .absSeg38
+.abs_section_46                    1   N/I       0x46       0x46   .absSeg39
+.abs_section_47                    1   N/I       0x47       0x47   .absSeg40
+.abs_section_48                    1   N/I       0x48       0x48   .absSeg41
+.abs_section_49                    1   N/I       0x49       0x49   .absSeg42
+.abs_section_4a                    1   N/I       0x4A       0x4A   .absSeg43
+.abs_section_4b                    1   N/I       0x4B       0x4B   .absSeg44
+.abs_section_4c                    1   N/I       0x4C       0x4C   .absSeg45
+.abs_section_4d                    1   N/I       0x4D       0x4D   .absSeg46
+.abs_section_4e                    1   N/I       0x4E       0x4E   .absSeg47
+.abs_section_4f                    1   N/I       0x4F       0x4F   .absSeg48
+.abs_section_60                    1   N/I       0x60       0x60   .absSeg49
+.abs_section_61                    1   N/I       0x61       0x61   .absSeg50
+.abs_section_6c                    1   N/I       0x6C       0x6C   .absSeg51
+.abs_section_6e                    1   N/I       0x6E       0x6E   .absSeg52
+.abs_section_76                    1   N/I       0x76       0x76   .absSeg53
+.abs_section_a0                    1   N/I       0xA0       0xA0   .absSeg54
+.abs_section_a1                    1   N/I       0xA1       0xA1   .absSeg55
+.abs_section_a2                    1   N/I       0xA2       0xA2   .absSeg56
+.abs_section_a3                    1   N/I       0xA3       0xA3   .absSeg57
+.abs_section_a4                    1   N/I       0xA4       0xA4   .absSeg58
+.abs_section_a5                    1   N/I       0xA5       0xA5   .absSeg59
+.abs_section_a8                    1   N/I       0xA8       0xA8   .absSeg60
+.abs_section_a9                    1   N/I       0xA9       0xA9   .absSeg61
+.abs_section_be                    1   N/I       0xBE       0xBE   .absSeg62
+.abs_section_ca                    1   N/I       0xCA       0xCA   .absSeg63
+.abs_section_cb                    1   N/I       0xCB       0xCB   .absSeg64
+.abs_section_cc                    1   N/I       0xCC       0xCC   .absSeg65
+.abs_section_cd                    1   N/I       0xCD       0xCD   .absSeg66
+.abs_section_ce                    1   N/I       0xCE       0xCE   .absSeg67
+.abs_section_cf                    1   N/I       0xCF       0xCF   .absSeg68
+.abs_section_d8                    1   N/I       0xD8       0xD8   .absSeg69
+.abs_section_d9                    1   N/I       0xD9       0xD9   .absSeg70
+.abs_section_da                    1   N/I       0xDA       0xDA   .absSeg71
+.abs_section_db                    1   N/I       0xDB       0xDB   .absSeg72
+.abs_section_100                   1   N/I      0x100      0x100   .absSeg73
+.abs_section_101                   1   N/I      0x101      0x101   .absSeg74
+.abs_section_102                   1   N/I      0x102      0x102   .absSeg75
+.abs_section_104                   1   N/I      0x104      0x104   .absSeg76
+.abs_section_105                   1   N/I      0x105      0x105   .absSeg77
+.abs_section_106                   1   N/I      0x106      0x106   .absSeg78
+.abs_section_107                   1   N/I      0x107      0x107   .absSeg79
+.abs_section_108                   1   N/I      0x108      0x108   .absSeg80
+.abs_section_109                   1   N/I      0x109      0x109   .absSeg81
+.abs_section_110                   1   N/I      0x110      0x110   .absSeg82
+.abs_section_120                   1   N/I      0x120      0x120   .absSeg83
+.abs_section_140                   1   N/I      0x140      0x140   .absSeg84
+.abs_section_141                   1   N/I      0x141      0x141   .absSeg85
+.abs_section_142                   1   N/I      0x142      0x142   .absSeg86
+.abs_section_143                   1   N/I      0x143      0x143   .absSeg87
+.abs_section_144                   1   N/I      0x144      0x144   .absSeg88
+.abs_section_145                   1   N/I      0x145      0x145   .absSeg89
+.abs_section_146                   1   N/I      0x146      0x146   .absSeg90
+.abs_section_147                   1   N/I      0x147      0x147   .absSeg91
+.abs_section_148                   1   N/I      0x148      0x148   .absSeg92
+.abs_section_149                   1   N/I      0x149      0x149   .absSeg93
+.abs_section_14a                   1   N/I      0x14A      0x14A   .absSeg94
+.abs_section_14b                   1   N/I      0x14B      0x14B   .absSeg95
+.abs_section_14d                   1   N/I      0x14D      0x14D   .absSeg96
+.abs_section_14e                   1   N/I      0x14E      0x14E   .absSeg97
+.abs_section_14f                   1   N/I      0x14F      0x14F   .absSeg98
+.abs_section_150                   1   N/I      0x150      0x150   .absSeg99
+.abs_section_151                   1   N/I      0x151      0x151   .absSeg100
+.abs_section_152                   1   N/I      0x152      0x152   .absSeg101
+.abs_section_153                   1   N/I      0x153      0x153   .absSeg102
+.abs_section_154                   1   N/I      0x154      0x154   .absSeg103
+.abs_section_155                   1   N/I      0x155      0x155   .absSeg104
+.abs_section_156                   1   N/I      0x156      0x156   .absSeg105
+.abs_section_157                   1   N/I      0x157      0x157   .absSeg106
+.abs_section_158                   1   N/I      0x158      0x158   .absSeg107
+.abs_section_159                   1   N/I      0x159      0x159   .absSeg108
+.abs_section_15a                   1   N/I      0x15A      0x15A   .absSeg109
+.abs_section_15b                   1   N/I      0x15B      0x15B   .absSeg110
+.abs_section_15c                   1   N/I      0x15C      0x15C   .absSeg111
+.abs_section_15d                   1   N/I      0x15D      0x15D   .absSeg112
+.abs_section_15e                   1   N/I      0x15E      0x15E   .absSeg113
+.abs_section_15f                   1   N/I      0x15F      0x15F   .absSeg114
+.abs_section_160                   1   N/I      0x160      0x160   .absSeg115
+.abs_section_161                   1   N/I      0x161      0x161   .absSeg116
+.abs_section_162                   1   N/I      0x162      0x162   .absSeg117
+.abs_section_163                   1   N/I      0x163      0x163   .absSeg118
+.abs_section_164                   1   N/I      0x164      0x164   .absSeg119
+.abs_section_165                   1   N/I      0x165      0x165   .absSeg120
+.abs_section_166                   1   N/I      0x166      0x166   .absSeg121
+.abs_section_167                   1   N/I      0x167      0x167   .absSeg122
+.abs_section_168                   1   N/I      0x168      0x168   .absSeg123
+.abs_section_169                   1   N/I      0x169      0x169   .absSeg124
+.abs_section_16a                   1   N/I      0x16A      0x16A   .absSeg125
+.abs_section_16b                   1   N/I      0x16B      0x16B   .absSeg126
+.abs_section_16c                   1   N/I      0x16C      0x16C   .absSeg127
+.abs_section_170                   1   N/I      0x170      0x170   .absSeg128
+.abs_section_171                   1   N/I      0x171      0x171   .absSeg129
+.abs_section_172                   1   N/I      0x172      0x172   .absSeg130
+.abs_section_173                   1   N/I      0x173      0x173   .absSeg131
+.abs_section_174                   1   N/I      0x174      0x174   .absSeg132
+.abs_section_175                   1   N/I      0x175      0x175   .absSeg133
+.abs_section_176                   1   N/I      0x176      0x176   .absSeg134
+.abs_section_177                   1   N/I      0x177      0x177   .absSeg135
+.abs_section_178                   1   N/I      0x178      0x178   .absSeg136
+.abs_section_179                   1   N/I      0x179      0x179   .absSeg137
+.abs_section_17a                   1   N/I      0x17A      0x17A   .absSeg138
+.abs_section_17b                   1   N/I      0x17B      0x17B   .absSeg139
+.abs_section_17c                   1   N/I      0x17C      0x17C   .absSeg140
+.abs_section_17d                   1   N/I      0x17D      0x17D   .absSeg141
+.abs_section_240                   1   N/I      0x240      0x240   .absSeg142
+.abs_section_241                   1   N/I      0x241      0x241   .absSeg143
+.abs_section_242                   1   N/I      0x242      0x242   .absSeg144
+.abs_section_243                   1   N/I      0x243      0x243   .absSeg145
+.abs_section_244                   1   N/I      0x244      0x244   .absSeg146
+.abs_section_245                   1   N/I      0x245      0x245   .absSeg147
+.abs_section_247                   1   N/I      0x247      0x247   .absSeg148
+.abs_section_248                   1   N/I      0x248      0x248   .absSeg149
+.abs_section_249                   1   N/I      0x249      0x249   .absSeg150
+.abs_section_24a                   1   N/I      0x24A      0x24A   .absSeg151
+.abs_section_24b                   1   N/I      0x24B      0x24B   .absSeg152
+.abs_section_24c                   1   N/I      0x24C      0x24C   .absSeg153
+.abs_section_24d                   1   N/I      0x24D      0x24D   .absSeg154
+.abs_section_24e                   1   N/I      0x24E      0x24E   .absSeg155
+.abs_section_250                   1   N/I      0x250      0x250   .absSeg156
+.abs_section_251                   1   N/I      0x251      0x251   .absSeg157
+.abs_section_252                   1   N/I      0x252      0x252   .absSeg158
+.abs_section_253                   1   N/I      0x253      0x253   .absSeg159
+.abs_section_254                   1   N/I      0x254      0x254   .absSeg160
+.abs_section_255                   1   N/I      0x255      0x255   .absSeg161
+.abs_section_256                   1   N/I      0x256      0x256   .absSeg162
+.abs_section_258                   1   N/I      0x258      0x258   .absSeg163
+.abs_section_259                   1   N/I      0x259      0x259   .absSeg164
+.abs_section_25a                   1   N/I      0x25A      0x25A   .absSeg165
+.abs_section_25b                   1   N/I      0x25B      0x25B   .absSeg166
+.abs_section_25c                   1   N/I      0x25C      0x25C   .absSeg167
+.abs_section_25d                   1   N/I      0x25D      0x25D   .absSeg168
+.abs_section_25e                   1   N/I      0x25E      0x25E   .absSeg169
+.abs_section_25f                   1   N/I      0x25F      0x25F   .absSeg170
+.abs_section_268                   1   N/I      0x268      0x268   .absSeg171
+.abs_section_269                   1   N/I      0x269      0x269   .absSeg172
+.abs_section_26a                   1   N/I      0x26A      0x26A   .absSeg173
+.abs_section_26b                   1   N/I      0x26B      0x26B   .absSeg174
+.abs_section_26c                   1   N/I      0x26C      0x26C   .absSeg175
+.abs_section_26d                   1   N/I      0x26D      0x26D   .absSeg176
+.abs_section_26e                   1   N/I      0x26E      0x26E   .absSeg177
+.abs_section_26f                   1   N/I      0x26F      0x26F   .absSeg178
+.abs_section_2f0                   1   N/I      0x2F0      0x2F0   .absSeg179
+.abs_section_2f1                   1   N/I      0x2F1      0x2F1   .absSeg180
+.abs_section_2f2                   1   N/I      0x2F2      0x2F2   .absSeg181
+.abs_section_2f3                   1   N/I      0x2F3      0x2F3   .absSeg182
+.abs_section_2f7                   1   N/I      0x2F7      0x2F7   .absSeg183
+.abs_section_2fa                   1   N/I      0x2FA      0x2FA   .absSeg184
+.abs_section_2fb                   1   N/I      0x2FB      0x2FB   .absSeg185
+.abs_section_2fc                   1   N/I      0x2FC      0x2FC   .absSeg186
+.abs_section_0                     2   N/I        0x0        0x1   .absSeg187
+.abs_section_2                     2   N/I        0x2        0x3   .absSeg188
+.abs_section_1a                    2   N/I       0x1A       0x1B   .absSeg189
+.abs_section_24                    2   N/I       0x24       0x25   .absSeg190
+.abs_section_44                    2   N/I       0x44       0x45   .absSeg191
+.abs_section_50                    2   N/I       0x50       0x51   .absSeg192
+.abs_section_52                    2   N/I       0x52       0x53   .absSeg193
+.abs_section_54                    2   N/I       0x54       0x55   .absSeg194
+.abs_section_56                    2   N/I       0x56       0x57   .absSeg195
+.abs_section_58                    2   N/I       0x58       0x59   .absSeg196
+.abs_section_5a                    2   N/I       0x5A       0x5B   .absSeg197
+.abs_section_5c                    2   N/I       0x5C       0x5D   .absSeg198
+.abs_section_5e                    2   N/I       0x5E       0x5F   .absSeg199
+.abs_section_62                    2   N/I       0x62       0x63   .absSeg200
+.abs_section_70                    2   N/I       0x70       0x71   .absSeg201
+.abs_section_72                    2   N/I       0x72       0x73   .absSeg202
+.abs_section_74                    2   N/I       0x74       0x75   .absSeg203
+.abs_section_78                    2   N/I       0x78       0x79   .absSeg204
+.abs_section_7a                    2   N/I       0x7A       0x7B   .absSeg205
+.abs_section_7c                    2   N/I       0x7C       0x7D   .absSeg206
+.abs_section_7e                    2   N/I       0x7E       0x7F   .absSeg207
+.abs_section_80                    2   N/I       0x80       0x81   .absSeg208
+.abs_section_82                    2   N/I       0x82       0x83   .absSeg209
+.abs_section_84                    2   N/I       0x84       0x85   .absSeg210
+.abs_section_86                    2   N/I       0x86       0x87   .absSeg211
+.abs_section_88                    2   N/I       0x88       0x89   .absSeg212
+.abs_section_8a                    2   N/I       0x8A       0x8B   .absSeg213
+.abs_section_8c                    2   N/I       0x8C       0x8D   .absSeg214
+.abs_section_8e                    2   N/I       0x8E       0x8F   .absSeg215
+.abs_section_90                    2   N/I       0x90       0x91   .absSeg216
+.abs_section_92                    2   N/I       0x92       0x93   .absSeg217
+.abs_section_ac                    2   N/I       0xAC       0xAD   .absSeg218
+.abs_section_ae                    2   N/I       0xAE       0xAF   .absSeg219
+.abs_section_b0                    2   N/I       0xB0       0xB1   .absSeg220
+.abs_section_b2                    2   N/I       0xB2       0xB3   .absSeg221
+.abs_section_b4                    2   N/I       0xB4       0xB5   .absSeg222
+.abs_section_b6                    2   N/I       0xB6       0xB7   .absSeg223
+.abs_section_b8                    2   N/I       0xB8       0xB9   .absSeg224
+.abs_section_ba                    2   N/I       0xBA       0xBB   .absSeg225
+.abs_section_bc                    2   N/I       0xBC       0xBD   .absSeg226
+.abs_section_c8                    2   N/I       0xC8       0xC9   .absSeg227
+.abs_section_dc                    2   N/I       0xDC       0xDD   .absSeg228
+.abs_section_10a                   2   N/I      0x10A      0x10B   .absSeg229
+.abs_section_16e                   2   N/I      0x16E      0x16F   .absSeg230
+.abs_section_17e                   2   N/I      0x17E      0x17F   .absSeg231
+.abs_section_270                   2   N/I      0x270      0x271   .absSeg232
+.abs_section_272                   2   N/I      0x272      0x273   .absSeg233
+.abs_section_274                   2   N/I      0x274      0x275   .absSeg234
+.abs_section_276                   2   N/I      0x276      0x277   .absSeg235
+.abs_section_2f4                   2   N/I      0x2F4      0x2F5   .absSeg236
+.abs_section_2f8                   2   N/I      0x2F8      0x2F9   .absSeg237
+.bss                             178   R/W     0x29AC     0x2A5D   RAM
+.common                          467   R/W     0x2A5E     0x2C30   RAM
+.vectSeg238_vect                   2     R     0xFFFE     0xFFFF   .vectSeg238
+
+Summary of section sizes per section type:
+READ_ONLY (R):        1D8E (dec:     7566)
+READ_WRITE (R/W):      431 (dec:     1073)
+NO_INIT (N/I):         120 (dec:      288)
+
+*********************************************************************************************
+VECTOR-ALLOCATION SECTION
+    Address     InitValue   InitFunction
+---------------------------------------------------------------------------------------------
+     0xFFFE        0xC000   _Startup
+
+*********************************************************************************************
+OBJECT-ALLOCATION SECTION
+     Name               Module                 Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+MODULE:                 -- Start12.c.o --
+- PROCEDURES:
+     Init                                     88000      29      41       2   .text       
+     _Startup                                  C000       F      15       1   .init       
+- VARIABLES:
+     _startupData                              C00F       6       6       3   .startData  
+- LABELS:
+     __SEG_END_SSTACK                          2900       0       0       1               
+MODULE:                 -- ENGSTOPSW.c.o --
+- PROCEDURES:
+     vfnENGSTOPSW_Init                        88029      11      17       2   .text       
+     vfnENGSTOPSW_Monitoring                  8803A      24      36       2   .text       
+     vfnENGSTOPSW_Filter                      8805E      32      50       2   .text       
+- VARIABLES:
+     u8ENGSTOPSW_Collection_Rate_Counter       29AC       1       1       1   .bss        
+     u8ENGSTOPSW_Buffer_Counter                29AD       1       1       4   .bss        
+     u8ENGSTOPSW_Counter                       29AE       1       1       6   .bss        
+     ENGSTOPSW_Filtered                        29AF       1       1       2   .bss        
+     au8ENGSTOPSW_Data_Buffer                  2A5E       3       3       5   .common     
+MODULE:                 -- Input_Output.c.o --
+- PROCEDURES:
+     vfnInputs_Outputs_Init                   88090     107     263       4   .text       
+- VARIABLES:
+MODULE:                 -- MIL.c.o --
+- PROCEDURES:
+     vfnMIL_Init                              88197       5       5       2   .text       
+     vfnMIL_Off                               8819C       5       5       2   .text       
+- VARIABLES:
+MODULE:                 -- O2H.c.o --
+- PROCEDURES:
+     vfnO2H_Init                              881A1       5       5       2   .text       
+     vfnO2H_On                                881A6       5       5       4   .text       
+- VARIABLES:
+MODULE:                 -- Relays.c.o --
+- PROCEDURES:
+     vfnRelays_Initialization                 881AB      1B      27       2   .text       
+     vfnRelayControl                          881C6      2A      42      10   .text       
+- VARIABLES:
+MODULE:                 -- MAP.c.o --
+- PROCEDURES:
+     vfnMAP_Init                              881F0      17      23       2   .text       
+     vfnMAP_Monitoring                        88207      34      52       2   .text       
+- VARIABLES:
+     u8MAP_Buffer_Counter                      29B0       1       1       3   .bss        
+     u8MAP_Counter                             29B1       1       1       1   .bss        
+     MAP_Data_Buffer                           2A61       8       8       4   .common     
+MODULE:                 -- TPS.c.o --
+- PROCEDURES:
+     vfnTPS_Init                              8823B      17      23       2   .text       
+     vfnTPS_Monitoring                        88252      2E      46       2   .text       
+     vfnTPS_ADC_Filter                        88280      36      54       2   .text       
+- VARIABLES:
+     TPS_Filtered                              29B2       2       2       2   .bss        
+     u8TPS_Collection_Rate_Counter             29B4       1       1       3   .bss        
+     u8TPS_Buffer_Counter                      29B5       1       1       4   .bss        
+     u8TPS_Counter                             29B6       1       1       2   .bss        
+     TPS_Data_Buffer                           2A69      20      32       3   .common     
+MODULE:                 -- VBAT.c.o --
+- PROCEDURES:
+     vfnVBAT_Init                             882B6      17      23       2   .text       
+     vfnVBAT_Monitoring                       882CD      2E      46       2   .text       
+     vfnVBAT_ADC_Filter                       882FB      2A      42       2   .text       
+- VARIABLES:
+     VBAT_Filtered                             29B7       2       2       1   .bss        
+     u8VBAT_Collection_Rate_Counter            29B9       1       1       3   .bss        
+     u8VBAT_Buffer_Counter                     29BA       1       1       4   .bss        
+     u8VBAT_Counter                            29BB       1       1       2   .bss        
+     VBAT_Data_Buffer                          2A89      20      32       3   .common     
+MODULE:                 -- Crank_Sensing.c.o --
+- PROCEDURES:
+     vfnInit_Crank_Sensing                    88325      21      33       2   .text       
+     vfnGoTo_Crank_FirstEdge                  88346      1F      31       8   .text       
+     vfnGoTo_SYNCHRONIZED_4C                  88365       E      14       2   .text       
+     u8Calculate_Tooth_Period                 88373      37      55      10   .text       
+     u8Valid_Period                           883AA      93     147       6   .text       
+     vfnTooth_Period_Store                    8843D      1C      28      10   .text       
+     vfnSet_Period_Timeout                    88459      4D      77       6   .text       
+     u8Missing_Tooth_Gap                      884A6      47      71       4   .text       
+     u8Tooth_After_Gap                        884ED      47      71       4   .text       
+     vfnIncrement_Teeth_Counter               88534      1F      31       4   .text       
+     Crank_State_Machine_Isr                   C6E1     202     514      19   NON_BANKED  
+     Crank_Missing_Tooth_Isr                   C8E3      43      67       1   NON_BANKED  
+     Crank_Timeout_Isr                         C926       5       5       1   NON_BANKED  
+- VARIABLES:
+     u16Current_Period                         2900       2       2      17   .data       
+     u16Previous_Period                        2902       2       2       6   .data       
+     u16Current_Tooth_Time                     29BC       2       2       8   .bss        
+     u16Previous_Tooth_Time                    29BE       2       2       9   .bss        
+     u16Tooth_Noise_Counter                    29C0       2       2       7   .bss        
+     u32Period0                                29C2       4       4      19   .bss        
+     u32Period1                                29C6       4       4      23   .bss        
+     u8Crank_State                             29CA       1       1      15   .bss        
+     u8Teeth_Counter                           29CB       1       1      17   .bss        
+     u16Last_Timeout                           29CC       2       2       3   .bss        
+     u8Engine_Rotation_Synchronization_counter       29CE       1       1       3   .bss        
+     u16Angle_Clock_rate                       29CF       2       2       5   .bss        
+     u8Period_Counter                          29D1       1       1       5   .bss        
+     au16Prior_Periods                         2AA9      60      96       4   .common     
+     u8Buffer_Counter                          2B09       1       1       5   .common     
+     Signature_Valid                           2B0A       1       1       4   .common     
+MODULE:                 -- Fuel_Control.c.o --
+- PROCEDURES:
+     vfnSet_Fuel_Controller                   88553      38      56      10   .text       
+     vfnDisable_Fuel1_Timer                   8858B       E      14       2   .text       
+     vfnFuel_Direct_Control                   88599      1B      27       2   .text       
+     u16Read_Fuel_Pulse_Angle_Map             885B4      38      56       2   .text       
+     u16Read_Fuel_Pulse_Width_Map             885EC      38      56       2   .text       
+     vfnUpdate_Current_Fuel1_Params           88624      19      25       6   .text       
+     vfnFuel_4C_Convert                       8863D       1       1       2   .text       
+     vfnSchedule_Fuel1_Pulse                  8863E      4B      75       6   .text       
+     Fuel1_Control_Isr                         C92B      3A      58       1   NON_BANKED  
+- VARIABLES:
+     u16Current_Fuel1_Start                    29D2       2       2       1   .bss        
+     u16Current_Fuel1_Start_Tooth              29D4       2       2       2   .bss        
+     u16Current_Fuel1_Start_Offset             29D6       2       2       3   .bss        
+     u16Current_Fuel1_Pulse                    29D8       2       2       2   .bss        
+     u8Fuel1_Control_State                     29DA       1       1       7   .bss        
+     u8Fuel2_Control_State                     29DB       1       1       1   .bss        
+     u8Fuel_Controller_Mode                    29DC       1       1       5   .bss        
+     u16Load.1                                 29DD       2       2       2   .bss        
+     u16RPM.2                                  29DF       2       2       2   .bss        
+     u16Load.3                                 29E1       2       2       2   .bss        
+     u16RPM.4                                  29E3       2       2       2   .bss        
+MODULE:                 -- Vectors.c.o --
+- PROCEDURES:
+     Dummy_D_Isr                               C965       4       4     108   NON_BANKED  
+- VARIABLES:
+     vectors                                   FF10      EE     238       0   .abs_section_ff10
+     Test_VAR                                  2B0B       1       1       1   .common     
+MODULE:                 -- ADC.c.o --
+- PROCEDURES:
+     vfnADC_Init                              88689      7F     127       2   .text       
+     ATD0_conversion_complete                  C969      3A      58       1   NON_BANKED  
+- VARIABLES:
+     RAW_ADC                                   29E5      20      32      15   .bss        
+     au16AnalogSamples                         2B0C     100     256       1   .common     
+     au16AnalogAverage                         2C0C      10      16       1   .common     
+MODULE:                 -- Cpu.c.o --
+- PROCEDURES:
+     vfnCpu_init                              88708       F      15       2   .text       
+     vfnClock_Init                            88717      39      57       2   .text       
+     Clock_Monitor_Isr                         C9A3       1       1       1   NON_BANKED  
+- VARIABLES:
+MODULE:                 -- MC33812.c.o --
+- PROCEDURES:
+     vfMC33812_Init                           88750      3B      59       2   .text       
+- VARIABLES:
+MODULE:                 -- PWM.c.o --
+- PROCEDURES:
+     vfnSet_PWM_Duty_Cycle                    8878B      11      17       2   .text       
+     vfn_Update_Crank_Speed                   8879C      13      19       2   .text       
+- VARIABLES:
+     u16Crank_Speed                            2A05       2       2       1   .bss        
+     u8Duty_High                               2C1C       1       1       1   .common     
+     u8Duty_Low                                2C1D       1       1       1   .common     
+MODULE:                 -- Timers.c.o --
+- PROCEDURES:
+     vfnTimerModule_Init                      887AF      2A      42       2   .text       
+- VARIABLES:
+MODULE:                 -- Spark_Control.c.o --
+- PROCEDURES:
+     vfnSet_Spark_Controller                  887D9      32      50       8   .text       
+     vfnDisable_Spark1_Timer                  8880B       E      14       2   .text       
+     vfnSpark_Direct_Control                  88819      1C      28       2   .text       
+     u16Read_Spark_Map                        88835      37      55       2   .text       
+     vfnUpdate_Current_Spark1_Params          8886C      19      25       4   .text       
+     vfnSpark_4C_Convert                      88885      1B      27       2   .text       
+     vfnSpark1_Counter_Reset                  888A0       4       4       4   .text       
+     vfnSchedule_Spark1_Pulse                 888A4      93     147       6   .text       
+     u16Interpolation                         88937      D6     214       6   .text       
+     u16Rev_Interpolation                     88A0D      D0     208       6   .text       
+     Spark1_Control_Isr                        C9A4      3E      62       1   NON_BANKED  
+- VARIABLES:
+     u16Current_Spark1_Start                   2A07       2       2       3   .bss        
+     u16Current_Spark1_Dwell                   2A09       2       2       3   .bss        
+     u16Current_Spark1_Dwell_Tooth             2A0B       2       2       6   .bss        
+     u16Current_Spark1_Dwell_Offset            2A0D       2       2       3   .bss        
+     u8Spark1_State                            2A0F       1       1       9   .bss        
+     u8Spark2_State                            2A10       1       1       1   .bss        
+     u8Spark_Controller_Mode                   2A11       1       1       5   .bss        
+     u8Spark1_Event_Counter                    2A12       1       1       4   .bss        
+     u16Load.1                                 2A13       2       2       2   .bss        
+     u16RPM.2                                  2A15       2       2       1   .bss        
+     temp.3                                    2A17       2       2       1   .bss        
+MODULE:                 -- Application Map.c.o --
+- PROCEDURES:
+- VARIABLES:
+     Spark_Timing_Map                          C019      F8     248       1   .rodata     
+     Fuel_Pulse_Angle_Map                      C111     2E8     744       1   .rodata     
+     Fuel_Pulse_Width_Map                      C3F9     2E8     744       1   .rodata     
+     Spark_Load_Map_Values                     2904       8       8       1   .data       
+     Spark_RPM_Map_Values                      290C      3E      62       1   .data       
+     Fuel_Load_Map_Values                      294A      18      24       2   .data       
+     Fuel_RPM_Map_Values                       2962      3E      62       2   .data       
+MODULE:                 -- Data Management.c.o --
+- PROCEDURES:
+     Data_Management_Init                     88ADD      19      25       2   .text       
+     Data_Management                          88AF6      13      19       2   .text       
+     Data_Management_Analogs                   C9E2       1       1       1   NON_BANKED  
+     Data_Management_Digitals                  C9E3       1       1       1   NON_BANKED  
+- VARIABLES:
+MODULE:                 -- ECU Configuration.c.o --
+- PROCEDURES:
+     vfnECU_Init                              88B09      1D      29       2   .text       
+- VARIABLES:
+MODULE:                 -- Engine Management.c.o --
+- PROCEDURES:
+     Engine_Management_Init                   88B26      13      19       2   .text       
+     Engine_Management                        88B39      25      37       2   .text       
+     vfnFuel1_Start                           88B5E      23      35       2   .text       
+     vfnFuel1_Pulse                           88B81      10      16       2   .text       
+     vfnCalc_Fuel_Start                       88B91      98     152       2   .text       
+     u16Calc_Fuel_Pulse_Width                 88C29      2A      42       2   .text       
+     vfnSpark1_Start                          88C53      14      20       2   .text       
+     vfnSpark1_Dwell                          88C67      20      32       2   .text       
+     u16Calc_Spark_Start                      88C87      4D      77       2   .text       
+     vfnCalc_Spark_Dwell                      88CD4      76     118       2   .text       
+- VARIABLES:
+     u16Next_Fuel1_Start                       2A19       2       2       2   .bss        
+     u16Next_Fuel1_Start_Tooth                 2A1B       2       2       2   .bss        
+     u16Next_Fuel1_Pulse                       2A1D       2       2       2   .bss        
+     u16Next_Fuel1_Start_Offset                2A1F       2       2       2   .bss        
+     u16Next_Spark1_Start                      2A21       2       2       4   .bss        
+     u16Next_Spark1_Dwell                      2A23       2       2       2   .bss        
+     u16Next_Spark1_Dwell_Tooth                2A25       2       2       2   .bss        
+     u16Next_Spark1_Dwell_Offset               2A27       2       2       2   .bss        
+     u16Fuel_Start_Angle                       2A29       2       2       9   .bss        
+     u16Fuel_Start_Tooth                       2A2B       2       2       8   .bss        
+     u16Fuel_Pulse_Width                       2A2D       2       2       4   .bss        
+     u16Fuel_Angle_Offset                      2A2F       2       2       4   .bss        
+     u16Spark_Start_Angle                      2A31       2       2       8   .bss        
+     u16Spark_Dwell_Angle                      2A33       2       2       2   .bss        
+     u16Spark_Dwell                            2A35       2       2       2   .bss        
+     u16Spark_Dwell_Tooth                      2A37       2       2       6   .bss        
+     u16Spark_Dwell_Offset                     2A39       2       2       3   .bss        
+MODULE:                 -- main.c.o --
+- PROCEDURES:
+     main                                     88D4A      29      41       2   .text       
+- VARIABLES:
+     gu8Index                                  2C1E       1       1       1   .common     
+MODULE:                 -- Scheduler.c.o --
+- PROCEDURES:
+     vfnScheduler_Init                        88D73       F      15       2   .text       
+     vfnScheduler_Start                       88D82       4       4       2   .text       
+     vfnTask_Scheduler                        88D86      69     105       2   .text       
+     Scheduler_RTI_Isr                         C9E4      65     101       1   NON_BANKED  
+- VARIABLES:
+     gu8Scheduler_Status                       2C1F       1       1       1   .common     
+     gu8Scheduler_Counter                      2C20       1       1       4   .common     
+     gu8Scheduler_Thread_ID                    2C21       1       1       9   .common     
+     gu8Scheduler_Thread_ID_Backup             2C22       1       1       4   .common     
+     u8_10ms_Counter                           2C23       1       1       3   .common     
+     u8_50ms_Counter                           2C24       1       1       3   .common     
+     u8_100ms_Counter                          2C25       1       1       3   .common     
+MODULE:                 -- User Management.c.o --
+- PROCEDURES:
+     User_Management_Init                     88DEF      2C      44       2   .text       
+     User_Management                          88E1B     101     257       7   .text       
+     vfnGoto_STOP                             88F1C      34      52       2   .text       
+     vfnGoto_START                            88F50      1C      28       2   .text       
+     vfnGoto_RUN                              88F6C      18      24       2   .text       
+     vfnGoto_OVERRUN                          88F84      15      21       2   .text       
+     Fuel_Pump_Controller_Init                88F99      10      16       8   .text       
+     Fuel_Pump_Controller                     88FA9      39      57       4   .text       
+     Update_Modifiers                         88FE2      31      49       4   .text       
+     MIL_Init                                 89013       5       5       2   .text       
+     MIL_Set                                  89018       5       5       4   .text       
+     MIL_Clear                                8901D       5       5       2   .text       
+     Get_Injector1_Fault                      89022       2       2       2   .text       
+     Get_Ignition1_Fault                      89024       2       2       2   .text       
+     Safety_Check                             89026       2       2       4   .text       
+     RPM_Calculate                            89028      4F      79       4   .text       
+     Load_Calculate                           89077       7       7       6   .text       
+- VARIABLES:
+     Top_Speed                                 29A0       2       2       2   .data       
+     CAL_TPS_LOW                               29A2       2       2       1   .data       
+     CAL_TPS_HIGH                              29A4       2       2       1   .data       
+     u16Spark_Modifier                         29A6       2       2       1   .data       
+     u16Fuel_Modifier                          29A8       2       2       2   .data       
+     CAL_FM_MSTART                             29AA       2       2       1   .data       
+     TPS_LOW                                   2A3B       2       2       1   .bss        
+     TPS_HIGH                                  2A3D       2       2       1   .bss        
+     MSTART_Counter                            2A3F       1       1       3   .bss        
+     Fuel_Add                                  2A40       2       2       1   .bss        
+     Fuel_Cut                                  2A42       2       2       1   .bss        
+     Spark_Advance                             2A44       2       2       1   .bss        
+     Spark_Retard                              2A46       2       2       1   .bss        
+     SM_MIT                                    2A48       2       2       1   .bss        
+     SM_AIAT                                   2A4A       2       2       1   .bss        
+     SM_AECT                                   2A4C       2       2       1   .bss        
+     SM_AALT                                   2A4E       2       2       1   .bss        
+     SM_AAF                                    2A50       2       2       1   .bss        
+     SM_AKNOCK                                 2A52       2       2       1   .bss        
+     SM_START                                  2A54       2       2       1   .bss        
+     SM_EGR                                    2A56       2       2       1   .bss        
+     FM_MO                                     2A58       2       2       2   .bss        
+     FM_MACCEL                                 2A5A       2       2       1   .bss        
+     FM_MSTART                                 2A5C       2       2       6   .bss        
+     Current_Appl_State                        2C26       1       1      11   .common     
+     Last_Appl_State                           2C27       1       1       4   .common     
+     SAFETY                                    2C28       1       1       2   .common     
+     LOAD                                      2C29       2       2       5   .common     
+     Engine_Speed                              2C2B       2       2       9   .common     
+     Injector1_Fault                           2C2D       1       1       1   .common     
+     Ignition1_Fault                           2C2E       1       1       1   .common     
+     u16Fuel_Pump_Timeout                      2C2F       2       2       4   .common     
+MODULE:                 -- rtshc12.c.o (ansibi.lib) --
+- PROCEDURES:
+     _LSHL                                     CA49      11      17       2   NON_BANKED  
+     _LSHRU                                    CA5A      11      17       1   NON_BANKED  
+     _LCMP                                     CA6B      19      25       2   NON_BANKED  
+     _lDivMod                                  CA84      BE     190       1   NON_BANKED  
+     _LDIVU                                    CB42       E      14       6   NON_BANKED  
+     _CASE_CHECKED                             CB50       B      11       1   NON_BANKED  
+     _CASE_CHECKED_BYTE                        CB5B      14      20       1   NON_BANKED  
+- VARIABLES:
+MODULE:                 -- MC9S12P128.c.o --
+- PROCEDURES:
+- VARIABLES:
+     _PORTE                                       8       1       1       1   .abs_section_8
+     _DDRE                                        9       1       1       1   .abs_section_9
+     _MODE                                        B       1       1       0   .abs_section_b
+     _PUCR                                        C       1       1       0   .abs_section_c
+     _RDRIV                                       D       1       1       0   .abs_section_d
+     _DIRECT                                     11       1       1       1   .abs_section_11
+     _MMCCTL1                                    13       1       1       1   .abs_section_13
+     _PPAGE                                      15       1       1       0   .abs_section_15
+     _ECLKCTL                                    1C       1       1       4   .abs_section_1c
+     _IRQCR                                      1E       1       1       1   .abs_section_1e
+     _DBGC1                                      20       1       1       0   .abs_section_20
+     _DBGSR                                      21       1       1       0   .abs_section_21
+     _DBGTCR                                     22       1       1       0   .abs_section_22
+     _DBGC2                                      23       1       1       0   .abs_section_23
+     _DBGCNT                                     26       1       1       0   .abs_section_26
+     _DBGSCRX                                    27       1       1       0   .abs_section_27
+     _DBGXCTL                                    28       1       1       0   .abs_section_28
+     _DBGXAH                                     29       1       1       0   .abs_section_29
+     _DBGXAM                                     2A       1       1       0   .abs_section_2a
+     _DBGXAL                                     2B       1       1       0   .abs_section_2b
+     _DBGADH                                     2C       1       1       0   .abs_section_2c
+     _DBGADL                                     2D       1       1       0   .abs_section_2d
+     _DBGADHM                                    2E       1       1       0   .abs_section_2e
+     _DBGADLM                                    2F       1       1       0   .abs_section_2f
+     _CPMUSYNR                                   34       1       1       3   .abs_section_34
+     _CPMUREFDIV                                 35       1       1       4   .abs_section_35
+     _CPMUPOSTDIV                                36       1       1       1   .abs_section_36
+     _CPMUFLG                                    37       1       1       4   .abs_section_37
+     _CPMUINT                                    38       1       1       1   .abs_section_38
+     _CPMUCLKS                                   39       1       1       1   .abs_section_39
+     _CPMUPLL                                    3A       1       1       0   .abs_section_3a
+     _CPMURTI                                    3B       1       1       3   .abs_section_3b
+     _CPMUCOP                                    3C       1       1       0   .abs_section_3c
+     _CPMUARMCOP                                 3F       1       1       0   .abs_section_3f
+     _TIOS                                       40       1       1       7   .abs_section_40
+     _CFORC                                      41       1       1       2   .abs_section_41
+     _OC7M                                       42       1       1       0   .abs_section_42
+     _OC7D                                       43       1       1       0   .abs_section_43
+     _TSCR1                                      46       1       1       4   .abs_section_46
+     _TTOV                                       47       1       1       0   .abs_section_47
+     _TCTL1                                      48       1       1       1   .abs_section_48
+     _TCTL2                                      49       1       1      15   .abs_section_49
+     _TCTL3                                      4A       1       1       2   .abs_section_4a
+     _TCTL4                                      4B       1       1       0   .abs_section_4b
+     _TIE                                        4C       1       1      16   .abs_section_4c
+     _TSCR2                                      4D       1       1       3   .abs_section_4d
+     _TFLG1                                      4E       1       1       0   .abs_section_4e
+     _TFLG2                                      4F       1       1       0   .abs_section_4f
+     _PACTL                                      60       1       1       3   .abs_section_60
+     _PAFLG                                      61       1       1       0   .abs_section_61
+     _OCPD                                       6C       1       1       7   .abs_section_6c
+     _PTPSR                                      6E       1       1       0   .abs_section_6e
+     _ATDSTAT0                                   76       1       1       1   .abs_section_76
+     _PWME                                       A0       1       1       0   .abs_section_a0
+     _PWMPOL                                     A1       1       1       0   .abs_section_a1
+     _PWMCLK                                     A2       1       1       0   .abs_section_a2
+     _PWMPRCLK                                   A3       1       1       0   .abs_section_a3
+     _PWMCAE                                     A4       1       1       0   .abs_section_a4
+     _PWMCTL                                     A5       1       1       0   .abs_section_a5
+     _PWMSCLA                                    A8       1       1       0   .abs_section_a8
+     _PWMSCLB                                    A9       1       1       0   .abs_section_a9
+     _PWMSDN                                     BE       1       1       0   .abs_section_be
+     _SCIACR2                                    CA       1       1       0   .abs_section_ca
+     _SCICR2                                     CB       1       1       0   .abs_section_cb
+     _SCISR1                                     CC       1       1       0   .abs_section_cc
+     _SCISR2                                     CD       1       1       0   .abs_section_cd
+     _SCIDRH                                     CE       1       1       0   .abs_section_ce
+     _SCIDRL                                     CF       1       1       0   .abs_section_cf
+     _SPICR1                                     D8       1       1       0   .abs_section_d8
+     _SPICR2                                     D9       1       1       0   .abs_section_d9
+     _SPIBR                                      DA       1       1       0   .abs_section_da
+     _SPISR                                      DB       1       1       0   .abs_section_db
+     _FCLKDIV                                   100       1       1       0   .abs_section_100
+     _FSEC                                      101       1       1       0   .abs_section_101
+     _FCCOBIX                                   102       1       1       0   .abs_section_102
+     _FCNFG                                     104       1       1       0   .abs_section_104
+     _FERCNFG                                   105       1       1       0   .abs_section_105
+     _FSTAT                                     106       1       1       0   .abs_section_106
+     _FERSTAT                                   107       1       1       0   .abs_section_107
+     _FPROT                                     108       1       1       0   .abs_section_108
+     _DFPROT                                    109       1       1       0   .abs_section_109
+     _FOPT                                      110       1       1       0   .abs_section_110
+     _IVBR                                      120       1       1       1   .abs_section_120
+     _CANCTL0                                   140       1       1       0   .abs_section_140
+     _CANCTL1                                   141       1       1       0   .abs_section_141
+     _CANBTR0                                   142       1       1       0   .abs_section_142
+     _CANBTR1                                   143       1       1       0   .abs_section_143
+     _CANRFLG                                   144       1       1       0   .abs_section_144
+     _CANRIER                                   145       1       1       0   .abs_section_145
+     _CANTFLG                                   146       1       1       0   .abs_section_146
+     _CANTIER                                   147       1       1       0   .abs_section_147
+     _CANTARQ                                   148       1       1       0   .abs_section_148
+     _CANTAAK                                   149       1       1       0   .abs_section_149
+     _CANTBSEL                                  14A       1       1       0   .abs_section_14a
+     _CANIDAC                                   14B       1       1       0   .abs_section_14b
+     _CANMISC                                   14D       1       1       0   .abs_section_14d
+     _CANRXERR                                  14E       1       1       0   .abs_section_14e
+     _CANTXERR                                  14F       1       1       0   .abs_section_14f
+     _CANIDAR0                                  150       1       1       0   .abs_section_150
+     _CANIDAR1                                  151       1       1       0   .abs_section_151
+     _CANIDAR2                                  152       1       1       0   .abs_section_152
+     _CANIDAR3                                  153       1       1       0   .abs_section_153
+     _CANIDMR0                                  154       1       1       0   .abs_section_154
+     _CANIDMR1                                  155       1       1       0   .abs_section_155
+     _CANIDMR2                                  156       1       1       0   .abs_section_156
+     _CANIDMR3                                  157       1       1       0   .abs_section_157
+     _CANIDAR4                                  158       1       1       0   .abs_section_158
+     _CANIDAR5                                  159       1       1       0   .abs_section_159
+     _CANIDAR6                                  15A       1       1       0   .abs_section_15a
+     _CANIDAR7                                  15B       1       1       0   .abs_section_15b
+     _CANIDMR4                                  15C       1       1       0   .abs_section_15c
+     _CANIDMR5                                  15D       1       1       0   .abs_section_15d
+     _CANIDMR6                                  15E       1       1       0   .abs_section_15e
+     _CANIDMR7                                  15F       1       1       0   .abs_section_15f
+     _CANRXIDR0                                 160       1       1       0   .abs_section_160
+     _CANRXIDR1                                 161       1       1       0   .abs_section_161
+     _CANRXIDR2                                 162       1       1       0   .abs_section_162
+     _CANRXIDR3                                 163       1       1       0   .abs_section_163
+     _CANRXDSR0                                 164       1       1       0   .abs_section_164
+     _CANRXDSR1                                 165       1       1       0   .abs_section_165
+     _CANRXDSR2                                 166       1       1       0   .abs_section_166
+     _CANRXDSR3                                 167       1       1       0   .abs_section_167
+     _CANRXDSR4                                 168       1       1       0   .abs_section_168
+     _CANRXDSR5                                 169       1       1       0   .abs_section_169
+     _CANRXDSR6                                 16A       1       1       0   .abs_section_16a
+     _CANRXDSR7                                 16B       1       1       0   .abs_section_16b
+     _CANRXDLR                                  16C       1       1       0   .abs_section_16c
+     _CANTXIDR0                                 170       1       1       0   .abs_section_170
+     _CANTXIDR1                                 171       1       1       0   .abs_section_171
+     _CANTXIDR2                                 172       1       1       0   .abs_section_172
+     _CANTXIDR3                                 173       1       1       0   .abs_section_173
+     _CANTXDSR0                                 174       1       1       0   .abs_section_174
+     _CANTXDSR1                                 175       1       1       0   .abs_section_175
+     _CANTXDSR2                                 176       1       1       0   .abs_section_176
+     _CANTXDSR3                                 177       1       1       0   .abs_section_177
+     _CANTXDSR4                                 178       1       1       0   .abs_section_178
+     _CANTXDSR5                                 179       1       1       0   .abs_section_179
+     _CANTXDSR6                                 17A       1       1       0   .abs_section_17a
+     _CANTXDSR7                                 17B       1       1       0   .abs_section_17b
+     _CANTXDLR                                  17C       1       1       0   .abs_section_17c
+     _CANTXTBPR                                 17D       1       1       0   .abs_section_17d
+     _PTT                                       240       1       1      15   .abs_section_240
+     _PTIT                                      241       1       1       0   .abs_section_241
+     _DDRT                                      242       1       1       9   .abs_section_242
+     _RDRT                                      243       1       1       0   .abs_section_243
+     _PERT                                      244       1       1       2   .abs_section_244
+     _PPST                                      245       1       1       2   .abs_section_245
+     _PTTRR                                     247       1       1       0   .abs_section_247
+     _PTS                                       248       1       1       1   .abs_section_248
+     _PTIS                                      249       1       1       0   .abs_section_249
+     _DDRS                                      24A       1       1       2   .abs_section_24a
+     _RDRS                                      24B       1       1       0   .abs_section_24b
+     _PERS                                      24C       1       1       1   .abs_section_24c
+     _PPSS                                      24D       1       1       1   .abs_section_24d
+     _WOMS                                      24E       1       1       0   .abs_section_24e
+     _PTM                                       250       1       1       3   .abs_section_250
+     _PTIM                                      251       1       1       0   .abs_section_251
+     _DDRM                                      252       1       1       4   .abs_section_252
+     _RDRM                                      253       1       1       0   .abs_section_253
+     _PERM                                      254       1       1       0   .abs_section_254
+     _PPSM                                      255       1       1       0   .abs_section_255
+     _WOMM                                      256       1       1       0   .abs_section_256
+     _PTP                                       258       1       1      13   .abs_section_258
+     _PTIP                                      259       1       1       0   .abs_section_259
+     _DDRP                                      25A       1       1       7   .abs_section_25a
+     _RDRP                                      25B       1       1       0   .abs_section_25b
+     _PERP                                      25C       1       1       0   .abs_section_25c
+     _PPSP                                      25D       1       1       0   .abs_section_25d
+     _PIEP                                      25E       1       1       0   .abs_section_25e
+     _PIFP                                      25F       1       1       0   .abs_section_25f
+     _PTJ                                       268       1       1       0   .abs_section_268
+     _PTIJ                                      269       1       1       0   .abs_section_269
+     _DDRJ                                      26A       1       1       0   .abs_section_26a
+     _RDRJ                                      26B       1       1       0   .abs_section_26b
+     _PERJ                                      26C       1       1       0   .abs_section_26c
+     _PPSJ                                      26D       1       1       0   .abs_section_26d
+     _PIEJ                                      26E       1       1       0   .abs_section_26e
+     _PIFJ                                      26F       1       1       0   .abs_section_26f
+     _CPMUHTCTL                                 2F0       1       1       0   .abs_section_2f0
+     _CPMULVCTL                                 2F1       1       1       0   .abs_section_2f1
+     _CPMUAPICTL                                2F2       1       1       0   .abs_section_2f2
+     _CPMUAPITR                                 2F3       1       1       0   .abs_section_2f3
+     _CPMUHTTR                                  2F7       1       1       0   .abs_section_2f7
+     _CPMUOSC                                   2FA       1       1       1   .abs_section_2fa
+     _CPMUPROT                                  2FB       1       1       0   .abs_section_2fb
+     _CPMUTEST2                                 2FC       1       1       0   .abs_section_2fc
+     _PORTAB                                      0       2       2       6   .abs_section_0
+     _DDRAB                                       2       2       2       9   .abs_section_2
+     _PARTID                                     1A       2       2       0   .abs_section_1a
+     _DBGTB                                      24       2       2       0   .abs_section_24
+     _TCNT                                       44       2       2       3   .abs_section_44
+     _TC0                                        50       2       2       3   .abs_section_50
+     _TC1                                        52       2       2       0   .abs_section_52
+     _TC2                                        54       2       2       4   .abs_section_54
+     _TC3                                        56       2       2       0   .abs_section_56
+     _TC4                                        58       2       2       1   .abs_section_58
+     _TC5                                        5A       2       2       2   .abs_section_5a
+     _TC6                                        5C       2       2       0   .abs_section_5c
+     _TC7                                        5E       2       2       4   .abs_section_5e
+     _PACNT                                      62       2       2       0   .abs_section_62
+     _ATDCTL01                                   70       2       2       4   .abs_section_70
+     _ATDCTL23                                   72       2       2       9   .abs_section_72
+     _ATDCTL45                                   74       2       2       8   .abs_section_74
+     _ATDCMPE                                    78       2       2       0   .abs_section_78
+     _ATDSTAT2                                   7A       2       2       0   .abs_section_7a
+     _ATDDIEN                                    7C       2       2       7   .abs_section_7c
+     _ATDCMPHT                                   7E       2       2       0   .abs_section_7e
+     _ATDDR0                                     80       2       2       1   .abs_section_80
+     _ATDDR1                                     82       2       2       1   .abs_section_82
+     _ATDDR2                                     84       2       2       1   .abs_section_84
+     _ATDDR3                                     86       2       2       1   .abs_section_86
+     _ATDDR4                                     88       2       2       1   .abs_section_88
+     _ATDDR5                                     8A       2       2       1   .abs_section_8a
+     _ATDDR6                                     8C       2       2       1   .abs_section_8c
+     _ATDDR7                                     8E       2       2       1   .abs_section_8e
+     _ATDDR8                                     90       2       2       1   .abs_section_90
+     _ATDDR9                                     92       2       2       1   .abs_section_92
+     _PWMCNT01                                   AC       2       2       0   .abs_section_ac
+     _PWMCNT23                                   AE       2       2       0   .abs_section_ae
+     _PWMCNT45                                   B0       2       2       0   .abs_section_b0
+     _PWMPER01                                   B2       2       2       0   .abs_section_b2
+     _PWMPER23                                   B4       2       2       0   .abs_section_b4
+     _PWMPER45                                   B6       2       2       0   .abs_section_b6
+     _PWMDTY01                                   B8       2       2       0   .abs_section_b8
+     _PWMDTY23                                   BA       2       2       2   .abs_section_ba
+     _PWMDTY45                                   BC       2       2       0   .abs_section_bc
+     _SCIBD                                      C8       2       2       0   .abs_section_c8
+     _SPIDR                                      DC       2       2       0   .abs_section_dc
+     _FCCOB                                     10A       2       2       0   .abs_section_10a
+     _CANRXTSR                                  16E       2       2       0   .abs_section_16e
+     _CANTXTSR                                  17E       2       2       0   .abs_section_17e
+     _PT01AD                                    270       2       2       0   .abs_section_270
+     _DDR01AD                                   272       2       2       7   .abs_section_272
+     _RDR01AD                                   274       2       2       0   .abs_section_274
+     _PER01AD                                   276       2       2       7   .abs_section_276
+     _CPMUAPIR                                  2F4       2       2       0   .abs_section_2f4
+     _CPMUIRCTRIM                               2F8       2       2       0   .abs_section_2f8
+
+*********************************************************************************************
+MODULE STATISTIC
+  Name                                      Data   Code  Const
+---------------------------------------------------------------------------------------------
+  Start12.c.o                                  0     56      0
+  ENGSTOPSW.c.o                                7    103      0
+  Input_Output.c.o                             0    263      0
+  MIL.c.o                                      0     10      0
+  O2H.c.o                                      0     10      0
+  Relays.c.o                                   0     69      0
+  MAP.c.o                                     10     75      0
+  TPS.c.o                                     37    123      0
+  VBAT.c.o                                    37    111      0
+  Crank_Sensing.c.o                          124   1144      0
+  Fuel_Control.c.o                            19    368      0
+  Vectors.c.o                                  1      4    238
+  ADC.c.o                                    304    185      0
+  Cpu.c.o                                      0     73      0
+  MC33812.c.o                                  0     59      0
+  PWM.c.o                                      4     36      0
+  Timers.c.o                                   0     42      0
+  Spark_Control.c.o                           18    834      0
+  Application Map.c.o                        156      0   1736
+  Data Management.c.o                          0     46      0
+  ECU Configuration.c.o                        0     29      0
+  Engine Management.c.o                       34    548      0
+  main.c.o                                     1     41      0
+  Scheduler.c.o                                7    225      0
+  User Management.c.o                         58    655      0
+  rtshc12.c.o (ansibi.lib)                     0    294      0
+  MC9S12P128.c.o                             288      0      0
+  other                                      256     12    177
+
+*********************************************************************************************
+SECTION USE IN OBJECT-ALLOCATION SECTION
+---------------------------------------------------------------------------------------------
+SECTION: ".text"
+  Init vfnENGSTOPSW_Init vfnENGSTOPSW_Monitoring vfnENGSTOPSW_Filter 
+  vfnInputs_Outputs_Init vfnMIL_Init vfnMIL_Off vfnO2H_Init vfnO2H_On 
+  vfnRelays_Initialization vfnRelayControl vfnMAP_Init vfnMAP_Monitoring 
+  vfnTPS_Init vfnTPS_Monitoring vfnTPS_ADC_Filter vfnVBAT_Init 
+  vfnVBAT_Monitoring vfnVBAT_ADC_Filter vfnInit_Crank_Sensing 
+  vfnGoTo_Crank_FirstEdge vfnGoTo_SYNCHRONIZED_4C u8Calculate_Tooth_Period 
+  u8Valid_Period vfnTooth_Period_Store vfnSet_Period_Timeout 
+  u8Missing_Tooth_Gap u8Tooth_After_Gap vfnIncrement_Teeth_Counter 
+  vfnSet_Fuel_Controller vfnDisable_Fuel1_Timer vfnFuel_Direct_Control 
+  u16Read_Fuel_Pulse_Angle_Map u16Read_Fuel_Pulse_Width_Map 
+  vfnUpdate_Current_Fuel1_Params vfnFuel_4C_Convert vfnSchedule_Fuel1_Pulse 
+  vfnADC_Init vfnCpu_init vfnClock_Init vfMC33812_Init vfnSet_PWM_Duty_Cycle 
+  vfn_Update_Crank_Speed vfnTimerModule_Init vfnSet_Spark_Controller 
+  vfnDisable_Spark1_Timer vfnSpark_Direct_Control u16Read_Spark_Map 
+  vfnUpdate_Current_Spark1_Params vfnSpark_4C_Convert vfnSpark1_Counter_Reset 
+  vfnSchedule_Spark1_Pulse u16Interpolation u16Rev_Interpolation 
+  Data_Management_Init Data_Management vfnECU_Init Engine_Management_Init 
+  Engine_Management vfnFuel1_Start vfnFuel1_Pulse vfnCalc_Fuel_Start 
+  u16Calc_Fuel_Pulse_Width vfnSpark1_Start vfnSpark1_Dwell u16Calc_Spark_Start 
+  vfnCalc_Spark_Dwell main vfnScheduler_Init vfnScheduler_Start 
+  vfnTask_Scheduler User_Management_Init User_Management vfnGoto_STOP 
+  vfnGoto_START vfnGoto_RUN vfnGoto_OVERRUN Fuel_Pump_Controller_Init 
+  Fuel_Pump_Controller Update_Modifiers MIL_Init MIL_Set MIL_Clear 
+  Get_Injector1_Fault Get_Ignition1_Fault Safety_Check RPM_Calculate 
+  Load_Calculate 
+SECTION: ".data"
+  u16Current_Period u16Previous_Period Spark_Load_Map_Values 
+  Spark_RPM_Map_Values Fuel_Load_Map_Values Fuel_RPM_Map_Values Top_Speed 
+  CAL_TPS_LOW CAL_TPS_HIGH u16Spark_Modifier u16Fuel_Modifier CAL_FM_MSTART 
+SECTION: ".bss"
+  u8ENGSTOPSW_Collection_Rate_Counter u8ENGSTOPSW_Buffer_Counter 
+  u8ENGSTOPSW_Counter ENGSTOPSW_Filtered u8MAP_Buffer_Counter u8MAP_Counter 
+  TPS_Filtered u8TPS_Collection_Rate_Counter u8TPS_Buffer_Counter u8TPS_Counter 
+  VBAT_Filtered u8VBAT_Collection_Rate_Counter u8VBAT_Buffer_Counter 
+  u8VBAT_Counter u16Current_Tooth_Time u16Previous_Tooth_Time 
+  u16Tooth_Noise_Counter u32Period0 u32Period1 u8Crank_State u8Teeth_Counter 
+  u16Last_Timeout u8Engine_Rotation_Synchronization_counter u16Angle_Clock_rate 
+  u8Period_Counter u16Current_Fuel1_Start u16Current_Fuel1_Start_Tooth 
+  u16Current_Fuel1_Start_Offset u16Current_Fuel1_Pulse u8Fuel1_Control_State 
+  u8Fuel2_Control_State u8Fuel_Controller_Mode u16Load.1 u16RPM.2 u16Load.3 
+  u16RPM.4 RAW_ADC u16Crank_Speed u16Current_Spark1_Start 
+  u16Current_Spark1_Dwell u16Current_Spark1_Dwell_Tooth 
+  u16Current_Spark1_Dwell_Offset u8Spark1_State u8Spark2_State 
+  u8Spark_Controller_Mode u8Spark1_Event_Counter u16Load.1 u16RPM.2 temp.3 
+  u16Next_Fuel1_Start u16Next_Fuel1_Start_Tooth u16Next_Fuel1_Pulse 
+  u16Next_Fuel1_Start_Offset u16Next_Spark1_Start u16Next_Spark1_Dwell 
+  u16Next_Spark1_Dwell_Tooth u16Next_Spark1_Dwell_Offset u16Fuel_Start_Angle 
+  u16Fuel_Start_Tooth u16Fuel_Pulse_Width u16Fuel_Angle_Offset 
+  u16Spark_Start_Angle u16Spark_Dwell_Angle u16Spark_Dwell u16Spark_Dwell_Tooth 
+  u16Spark_Dwell_Offset TPS_LOW TPS_HIGH MSTART_Counter Fuel_Add Fuel_Cut 
+  Spark_Advance Spark_Retard SM_MIT SM_AIAT SM_AECT SM_AALT SM_AAF SM_AKNOCK 
+  SM_START SM_EGR FM_MO FM_MACCEL FM_MSTART 
+SECTION: ".init"
+  _Startup 
+SECTION: ".rodata"
+  Spark_Timing_Map Fuel_Pulse_Angle_Map Fuel_Pulse_Width_Map 
+SECTION: "NON_BANKED"
+  Crank_State_Machine_Isr Crank_Missing_Tooth_Isr Crank_Timeout_Isr 
+  Fuel1_Control_Isr Dummy_D_Isr ATD0_conversion_complete Clock_Monitor_Isr 
+  Spark1_Control_Isr Data_Management_Analogs Data_Management_Digitals 
+  Scheduler_RTI_Isr _LSHL _LSHRU _LCMP _lDivMod _LDIVU _CASE_CHECKED 
+  _CASE_CHECKED_BYTE 
+SECTION: ".common"
+  au8ENGSTOPSW_Data_Buffer MAP_Data_Buffer TPS_Data_Buffer VBAT_Data_Buffer 
+  au16Prior_Periods u8Buffer_Counter Signature_Valid Test_VAR au16AnalogSamples 
+  au16AnalogAverage u8Duty_High u8Duty_Low gu8Index gu8Scheduler_Status 
+  gu8Scheduler_Counter gu8Scheduler_Thread_ID gu8Scheduler_Thread_ID_Backup 
+  u8_10ms_Counter u8_50ms_Counter u8_100ms_Counter Current_Appl_State 
+  Last_Appl_State SAFETY LOAD Engine_Speed Injector1_Fault Ignition1_Fault 
+  u16Fuel_Pump_Timeout 
+SECTION: ".abs_section_ff10"
+  vectors 
+SECTION: ".abs_section_8"
+  _PORTE 
+SECTION: ".abs_section_9"
+  _DDRE 
+SECTION: ".abs_section_b"
+  _MODE 
+SECTION: ".abs_section_c"
+  _PUCR 
+SECTION: ".abs_section_d"
+  _RDRIV 
+SECTION: ".abs_section_11"
+  _DIRECT 
+SECTION: ".abs_section_13"
+  _MMCCTL1 
+SECTION: ".abs_section_15"
+  _PPAGE 
+SECTION: ".abs_section_1c"
+  _ECLKCTL 
+SECTION: ".abs_section_1e"
+  _IRQCR 
+SECTION: ".abs_section_20"
+  _DBGC1 
+SECTION: ".abs_section_21"
+  _DBGSR 
+SECTION: ".abs_section_22"
+  _DBGTCR 
+SECTION: ".abs_section_23"
+  _DBGC2 
+SECTION: ".abs_section_26"
+  _DBGCNT 
+SECTION: ".abs_section_27"
+  _DBGSCRX 
+SECTION: ".abs_section_28"
+  _DBGXCTL 
+SECTION: ".abs_section_29"
+  _DBGXAH 
+SECTION: ".abs_section_2a"
+  _DBGXAM 
+SECTION: ".abs_section_2b"
+  _DBGXAL 
+SECTION: ".abs_section_2c"
+  _DBGADH 
+SECTION: ".abs_section_2d"
+  _DBGADL 
+SECTION: ".abs_section_2e"
+  _DBGADHM 
+SECTION: ".abs_section_2f"
+  _DBGADLM 
+SECTION: ".abs_section_34"
+  _CPMUSYNR 
+SECTION: ".abs_section_35"
+  _CPMUREFDIV 
+SECTION: ".abs_section_36"
+  _CPMUPOSTDIV 
+SECTION: ".abs_section_37"
+  _CPMUFLG 
+SECTION: ".abs_section_38"
+  _CPMUINT 
+SECTION: ".abs_section_39"
+  _CPMUCLKS 
+SECTION: ".abs_section_3a"
+  _CPMUPLL 
+SECTION: ".abs_section_3b"
+  _CPMURTI 
+SECTION: ".abs_section_3c"
+  _CPMUCOP 
+SECTION: ".abs_section_3f"
+  _CPMUARMCOP 
+SECTION: ".abs_section_40"
+  _TIOS 
+SECTION: ".abs_section_41"
+  _CFORC 
+SECTION: ".abs_section_42"
+  _OC7M 
+SECTION: ".abs_section_43"
+  _OC7D 
+SECTION: ".abs_section_46"
+  _TSCR1 
+SECTION: ".abs_section_47"
+  _TTOV 
+SECTION: ".abs_section_48"
+  _TCTL1 
+SECTION: ".abs_section_49"
+  _TCTL2 
+SECTION: ".abs_section_4a"
+  _TCTL3 
+SECTION: ".abs_section_4b"
+  _TCTL4 
+SECTION: ".abs_section_4c"
+  _TIE 
+SECTION: ".abs_section_4d"
+  _TSCR2 
+SECTION: ".abs_section_4e"
+  _TFLG1 
+SECTION: ".abs_section_4f"
+  _TFLG2 
+SECTION: ".abs_section_60"
+  _PACTL 
+SECTION: ".abs_section_61"
+  _PAFLG 
+SECTION: ".abs_section_6c"
+  _OCPD 
+SECTION: ".abs_section_6e"
+  _PTPSR 
+SECTION: ".abs_section_76"
+  _ATDSTAT0 
+SECTION: ".abs_section_a0"
+  _PWME 
+SECTION: ".abs_section_a1"
+  _PWMPOL 
+SECTION: ".abs_section_a2"
+  _PWMCLK 
+SECTION: ".abs_section_a3"
+  _PWMPRCLK 
+SECTION: ".abs_section_a4"
+  _PWMCAE 
+SECTION: ".abs_section_a5"
+  _PWMCTL 
+SECTION: ".abs_section_a8"
+  _PWMSCLA 
+SECTION: ".abs_section_a9"
+  _PWMSCLB 
+SECTION: ".abs_section_be"
+  _PWMSDN 
+SECTION: ".abs_section_ca"
+  _SCIACR2 
+SECTION: ".abs_section_cb"
+  _SCICR2 
+SECTION: ".abs_section_cc"
+  _SCISR1 
+SECTION: ".abs_section_cd"
+  _SCISR2 
+SECTION: ".abs_section_ce"
+  _SCIDRH 
+SECTION: ".abs_section_cf"
+  _SCIDRL 
+SECTION: ".abs_section_d8"
+  _SPICR1 
+SECTION: ".abs_section_d9"
+  _SPICR2 
+SECTION: ".abs_section_da"
+  _SPIBR 
+SECTION: ".abs_section_db"
+  _SPISR 
+SECTION: ".abs_section_100"
+  _FCLKDIV 
+SECTION: ".abs_section_101"
+  _FSEC 
+SECTION: ".abs_section_102"
+  _FCCOBIX 
+SECTION: ".abs_section_104"
+  _FCNFG 
+SECTION: ".abs_section_105"
+  _FERCNFG 
+SECTION: ".abs_section_106"
+  _FSTAT 
+SECTION: ".abs_section_107"
+  _FERSTAT 
+SECTION: ".abs_section_108"
+  _FPROT 
+SECTION: ".abs_section_109"
+  _DFPROT 
+SECTION: ".abs_section_110"
+  _FOPT 
+SECTION: ".abs_section_120"
+  _IVBR 
+SECTION: ".abs_section_140"
+  _CANCTL0 
+SECTION: ".abs_section_141"
+  _CANCTL1 
+SECTION: ".abs_section_142"
+  _CANBTR0 
+SECTION: ".abs_section_143"
+  _CANBTR1 
+SECTION: ".abs_section_144"
+  _CANRFLG 
+SECTION: ".abs_section_145"
+  _CANRIER 
+SECTION: ".abs_section_146"
+  _CANTFLG 
+SECTION: ".abs_section_147"
+  _CANTIER 
+SECTION: ".abs_section_148"
+  _CANTARQ 
+SECTION: ".abs_section_149"
+  _CANTAAK 
+SECTION: ".abs_section_14a"
+  _CANTBSEL 
+SECTION: ".abs_section_14b"
+  _CANIDAC 
+SECTION: ".abs_section_14d"
+  _CANMISC 
+SECTION: ".abs_section_14e"
+  _CANRXERR 
+SECTION: ".abs_section_14f"
+  _CANTXERR 
+SECTION: ".abs_section_150"
+  _CANIDAR0 
+SECTION: ".abs_section_151"
+  _CANIDAR1 
+SECTION: ".abs_section_152"
+  _CANIDAR2 
+SECTION: ".abs_section_153"
+  _CANIDAR3 
+SECTION: ".abs_section_154"
+  _CANIDMR0 
+SECTION: ".abs_section_155"
+  _CANIDMR1 
+SECTION: ".abs_section_156"
+  _CANIDMR2 
+SECTION: ".abs_section_157"
+  _CANIDMR3 
+SECTION: ".abs_section_158"
+  _CANIDAR4 
+SECTION: ".abs_section_159"
+  _CANIDAR5 
+SECTION: ".abs_section_15a"
+  _CANIDAR6 
+SECTION: ".abs_section_15b"
+  _CANIDAR7 
+SECTION: ".abs_section_15c"
+  _CANIDMR4 
+SECTION: ".abs_section_15d"
+  _CANIDMR5 
+SECTION: ".abs_section_15e"
+  _CANIDMR6 
+SECTION: ".abs_section_15f"
+  _CANIDMR7 
+SECTION: ".abs_section_160"
+  _CANRXIDR0 
+SECTION: ".abs_section_161"
+  _CANRXIDR1 
+SECTION: ".abs_section_162"
+  _CANRXIDR2 
+SECTION: ".abs_section_163"
+  _CANRXIDR3 
+SECTION: ".abs_section_164"
+  _CANRXDSR0 
+SECTION: ".abs_section_165"
+  _CANRXDSR1 
+SECTION: ".abs_section_166"
+  _CANRXDSR2 
+SECTION: ".abs_section_167"
+  _CANRXDSR3 
+SECTION: ".abs_section_168"
+  _CANRXDSR4 
+SECTION: ".abs_section_169"
+  _CANRXDSR5 
+SECTION: ".abs_section_16a"
+  _CANRXDSR6 
+SECTION: ".abs_section_16b"
+  _CANRXDSR7 
+SECTION: ".abs_section_16c"
+  _CANRXDLR 
+SECTION: ".abs_section_170"
+  _CANTXIDR0 
+SECTION: ".abs_section_171"
+  _CANTXIDR1 
+SECTION: ".abs_section_172"
+  _CANTXIDR2 
+SECTION: ".abs_section_173"
+  _CANTXIDR3 
+SECTION: ".abs_section_174"
+  _CANTXDSR0 
+SECTION: ".abs_section_175"
+  _CANTXDSR1 
+SECTION: ".abs_section_176"
+  _CANTXDSR2 
+SECTION: ".abs_section_177"
+  _CANTXDSR3 
+SECTION: ".abs_section_178"
+  _CANTXDSR4 
+SECTION: ".abs_section_179"
+  _CANTXDSR5 
+SECTION: ".abs_section_17a"
+  _CANTXDSR6 
+SECTION: ".abs_section_17b"
+  _CANTXDSR7 
+SECTION: ".abs_section_17c"
+  _CANTXDLR 
+SECTION: ".abs_section_17d"
+  _CANTXTBPR 
+SECTION: ".abs_section_240"
+  _PTT 
+SECTION: ".abs_section_241"
+  _PTIT 
+SECTION: ".abs_section_242"
+  _DDRT 
+SECTION: ".abs_section_243"
+  _RDRT 
+SECTION: ".abs_section_244"
+  _PERT 
+SECTION: ".abs_section_245"
+  _PPST 
+SECTION: ".abs_section_247"
+  _PTTRR 
+SECTION: ".abs_section_248"
+  _PTS 
+SECTION: ".abs_section_249"
+  _PTIS 
+SECTION: ".abs_section_24a"
+  _DDRS 
+SECTION: ".abs_section_24b"
+  _RDRS 
+SECTION: ".abs_section_24c"
+  _PERS 
+SECTION: ".abs_section_24d"
+  _PPSS 
+SECTION: ".abs_section_24e"
+  _WOMS 
+SECTION: ".abs_section_250"
+  _PTM 
+SECTION: ".abs_section_251"
+  _PTIM 
+SECTION: ".abs_section_252"
+  _DDRM 
+SECTION: ".abs_section_253"
+  _RDRM 
+SECTION: ".abs_section_254"
+  _PERM 
+SECTION: ".abs_section_255"
+  _PPSM 
+SECTION: ".abs_section_256"
+  _WOMM 
+SECTION: ".abs_section_258"
+  _PTP 
+SECTION: ".abs_section_259"
+  _PTIP 
+SECTION: ".abs_section_25a"
+  _DDRP 
+SECTION: ".abs_section_25b"
+  _RDRP 
+SECTION: ".abs_section_25c"
+  _PERP 
+SECTION: ".abs_section_25d"
+  _PPSP 
+SECTION: ".abs_section_25e"
+  _PIEP 
+SECTION: ".abs_section_25f"
+  _PIFP 
+SECTION: ".abs_section_268"
+  _PTJ 
+SECTION: ".abs_section_269"
+  _PTIJ 
+SECTION: ".abs_section_26a"
+  _DDRJ 
+SECTION: ".abs_section_26b"
+  _RDRJ 
+SECTION: ".abs_section_26c"
+  _PERJ 
+SECTION: ".abs_section_26d"
+  _PPSJ 
+SECTION: ".abs_section_26e"
+  _PIEJ 
+SECTION: ".abs_section_26f"
+  _PIFJ 
+SECTION: ".abs_section_2f0"
+  _CPMUHTCTL 
+SECTION: ".abs_section_2f1"
+  _CPMULVCTL 
+SECTION: ".abs_section_2f2"
+  _CPMUAPICTL 
+SECTION: ".abs_section_2f3"
+  _CPMUAPITR 
+SECTION: ".abs_section_2f7"
+  _CPMUHTTR 
+SECTION: ".abs_section_2fa"
+  _CPMUOSC 
+SECTION: ".abs_section_2fb"
+  _CPMUPROT 
+SECTION: ".abs_section_2fc"
+  _CPMUTEST2 
+SECTION: ".abs_section_0"
+  _PORTAB 
+SECTION: ".abs_section_2"
+  _DDRAB 
+SECTION: ".abs_section_1a"
+  _PARTID 
+SECTION: ".abs_section_24"
+  _DBGTB 
+SECTION: ".abs_section_44"
+  _TCNT 
+SECTION: ".abs_section_50"
+  _TC0 
+SECTION: ".abs_section_52"
+  _TC1 
+SECTION: ".abs_section_54"
+  _TC2 
+SECTION: ".abs_section_56"
+  _TC3 
+SECTION: ".abs_section_58"
+  _TC4 
+SECTION: ".abs_section_5a"
+  _TC5 
+SECTION: ".abs_section_5c"
+  _TC6 
+SECTION: ".abs_section_5e"
+  _TC7 
+SECTION: ".abs_section_62"
+  _PACNT 
+SECTION: ".abs_section_70"
+  _ATDCTL01 
+SECTION: ".abs_section_72"
+  _ATDCTL23 
+SECTION: ".abs_section_74"
+  _ATDCTL45 
+SECTION: ".abs_section_78"
+  _ATDCMPE 
+SECTION: ".abs_section_7a"
+  _ATDSTAT2 
+SECTION: ".abs_section_7c"
+  _ATDDIEN 
+SECTION: ".abs_section_7e"
+  _ATDCMPHT 
+SECTION: ".abs_section_80"
+  _ATDDR0 
+SECTION: ".abs_section_82"
+  _ATDDR1 
+SECTION: ".abs_section_84"
+  _ATDDR2 
+SECTION: ".abs_section_86"
+  _ATDDR3 
+SECTION: ".abs_section_88"
+  _ATDDR4 
+SECTION: ".abs_section_8a"
+  _ATDDR5 
+SECTION: ".abs_section_8c"
+  _ATDDR6 
+SECTION: ".abs_section_8e"
+  _ATDDR7 
+SECTION: ".abs_section_90"
+  _ATDDR8 
+SECTION: ".abs_section_92"
+  _ATDDR9 
+SECTION: ".abs_section_ac"
+  _PWMCNT01 
+SECTION: ".abs_section_ae"
+  _PWMCNT23 
+SECTION: ".abs_section_b0"
+  _PWMCNT45 
+SECTION: ".abs_section_b2"
+  _PWMPER01 
+SECTION: ".abs_section_b4"
+  _PWMPER23 
+SECTION: ".abs_section_b6"
+  _PWMPER45 
+SECTION: ".abs_section_b8"
+  _PWMDTY01 
+SECTION: ".abs_section_ba"
+  _PWMDTY23 
+SECTION: ".abs_section_bc"
+  _PWMDTY45 
+SECTION: ".abs_section_c8"
+  _SCIBD 
+SECTION: ".abs_section_dc"
+  _SPIDR 
+SECTION: ".abs_section_10a"
+  _FCCOB 
+SECTION: ".abs_section_16e"
+  _CANRXTSR 
+SECTION: ".abs_section_17e"
+  _CANTXTSR 
+SECTION: ".abs_section_270"
+  _PT01AD 
+SECTION: ".abs_section_272"
+  _DDR01AD 
+SECTION: ".abs_section_274"
+  _RDR01AD 
+SECTION: ".abs_section_276"
+  _PER01AD 
+SECTION: ".abs_section_2f4"
+  _CPMUAPIR 
+SECTION: ".abs_section_2f8"
+  _CPMUIRCTRIM 
+
+*********************************************************************************************
+OBJECT LIST SORTED BY ADDRESS
+     Name                                      Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+     _PORTAB                                      0       2       2       6   .abs_section_0
+     _DDRAB                                       2       2       2       9   .abs_section_2
+     _PORTE                                       8       1       1       1   .abs_section_8
+     _DDRE                                        9       1       1       1   .abs_section_9
+     _MODE                                        B       1       1       0   .abs_section_b
+     _PUCR                                        C       1       1       0   .abs_section_c
+     _RDRIV                                       D       1       1       0   .abs_section_d
+     _DIRECT                                     11       1       1       1   .abs_section_11
+     _MMCCTL1                                    13       1       1       1   .abs_section_13
+     _PPAGE                                      15       1       1       0   .abs_section_15
+     _PARTID                                     1A       2       2       0   .abs_section_1a
+     _ECLKCTL                                    1C       1       1       4   .abs_section_1c
+     _IRQCR                                      1E       1       1       1   .abs_section_1e
+     _DBGC1                                      20       1       1       0   .abs_section_20
+     _DBGSR                                      21       1       1       0   .abs_section_21
+     _DBGTCR                                     22       1       1       0   .abs_section_22
+     _DBGC2                                      23       1       1       0   .abs_section_23
+     _DBGTB                                      24       2       2       0   .abs_section_24
+     _DBGCNT                                     26       1       1       0   .abs_section_26
+     _DBGSCRX                                    27       1       1       0   .abs_section_27
+     _DBGXCTL                                    28       1       1       0   .abs_section_28
+     _DBGXAH                                     29       1       1       0   .abs_section_29
+     _DBGXAM                                     2A       1       1       0   .abs_section_2a
+     _DBGXAL                                     2B       1       1       0   .abs_section_2b
+     _DBGADH                                     2C       1       1       0   .abs_section_2c
+     _DBGADL                                     2D       1       1       0   .abs_section_2d
+     _DBGADHM                                    2E       1       1       0   .abs_section_2e
+     _DBGADLM                                    2F       1       1       0   .abs_section_2f
+     _CPMUSYNR                                   34       1       1       3   .abs_section_34
+     _CPMUREFDIV                                 35       1       1       4   .abs_section_35
+     _CPMUPOSTDIV                                36       1       1       1   .abs_section_36
+     _CPMUFLG                                    37       1       1       4   .abs_section_37
+     _CPMUINT                                    38       1       1       1   .abs_section_38
+     _CPMUCLKS                                   39       1       1       1   .abs_section_39
+     _CPMUPLL                                    3A       1       1       0   .abs_section_3a
+     _CPMURTI                                    3B       1       1       3   .abs_section_3b
+     _CPMUCOP                                    3C       1       1       0   .abs_section_3c
+     _CPMUARMCOP                                 3F       1       1       0   .abs_section_3f
+     _TIOS                                       40       1       1       7   .abs_section_40
+     _CFORC                                      41       1       1       2   .abs_section_41
+     _OC7M                                       42       1       1       0   .abs_section_42
+     _OC7D                                       43       1       1       0   .abs_section_43
+     _TCNT                                       44       2       2       3   .abs_section_44
+     _TSCR1                                      46       1       1       4   .abs_section_46
+     _TTOV                                       47       1       1       0   .abs_section_47
+     _TCTL1                                      48       1       1       1   .abs_section_48
+     _TCTL2                                      49       1       1      15   .abs_section_49
+     _TCTL3                                      4A       1       1       2   .abs_section_4a
+     _TCTL4                                      4B       1       1       0   .abs_section_4b
+     _TIE                                        4C       1       1      16   .abs_section_4c
+     _TSCR2                                      4D       1       1       3   .abs_section_4d
+     _TFLG1                                      4E       1       1       0   .abs_section_4e
+     _TFLG2                                      4F       1       1       0   .abs_section_4f
+     _TC0                                        50       2       2       3   .abs_section_50
+     _TC1                                        52       2       2       0   .abs_section_52
+     _TC2                                        54       2       2       4   .abs_section_54
+     _TC3                                        56       2       2       0   .abs_section_56
+     _TC4                                        58       2       2       1   .abs_section_58
+     _TC5                                        5A       2       2       2   .abs_section_5a
+     _TC6                                        5C       2       2       0   .abs_section_5c
+     _TC7                                        5E       2       2       4   .abs_section_5e
+     _PACTL                                      60       1       1       3   .abs_section_60
+     _PAFLG                                      61       1       1       0   .abs_section_61
+     _PACNT                                      62       2       2       0   .abs_section_62
+     _OCPD                                       6C       1       1       7   .abs_section_6c
+     _PTPSR                                      6E       1       1       0   .abs_section_6e
+     _ATDCTL01                                   70       2       2       4   .abs_section_70
+     _ATDCTL23                                   72       2       2       9   .abs_section_72
+     _ATDCTL45                                   74       2       2       8   .abs_section_74
+     _ATDSTAT0                                   76       1       1       1   .abs_section_76
+     _ATDCMPE                                    78       2       2       0   .abs_section_78
+     _ATDSTAT2                                   7A       2       2       0   .abs_section_7a
+     _ATDDIEN                                    7C       2       2       7   .abs_section_7c
+     _ATDCMPHT                                   7E       2       2       0   .abs_section_7e
+     _ATDDR0                                     80       2       2       1   .abs_section_80
+     _ATDDR1                                     82       2       2       1   .abs_section_82
+     _ATDDR2                                     84       2       2       1   .abs_section_84
+     _ATDDR3                                     86       2       2       1   .abs_section_86
+     _ATDDR4                                     88       2       2       1   .abs_section_88
+     _ATDDR5                                     8A       2       2       1   .abs_section_8a
+     _ATDDR6                                     8C       2       2       1   .abs_section_8c
+     _ATDDR7                                     8E       2       2       1   .abs_section_8e
+     _ATDDR8                                     90       2       2       1   .abs_section_90
+     _ATDDR9                                     92       2       2       1   .abs_section_92
+     _PWME                                       A0       1       1       0   .abs_section_a0
+     _PWMPOL                                     A1       1       1       0   .abs_section_a1
+     _PWMCLK                                     A2       1       1       0   .abs_section_a2
+     _PWMPRCLK                                   A3       1       1       0   .abs_section_a3
+     _PWMCAE                                     A4       1       1       0   .abs_section_a4
+     _PWMCTL                                     A5       1       1       0   .abs_section_a5
+     _PWMSCLA                                    A8       1       1       0   .abs_section_a8
+     _PWMSCLB                                    A9       1       1       0   .abs_section_a9
+     _PWMCNT01                                   AC       2       2       0   .abs_section_ac
+     _PWMCNT23                                   AE       2       2       0   .abs_section_ae
+     _PWMCNT45                                   B0       2       2       0   .abs_section_b0
+     _PWMPER01                                   B2       2       2       0   .abs_section_b2
+     _PWMPER23                                   B4       2       2       0   .abs_section_b4
+     _PWMPER45                                   B6       2       2       0   .abs_section_b6
+     _PWMDTY01                                   B8       2       2       0   .abs_section_b8
+     _PWMDTY23                                   BA       2       2       2   .abs_section_ba
+     _PWMDTY45                                   BC       2       2       0   .abs_section_bc
+     _PWMSDN                                     BE       1       1       0   .abs_section_be
+     _SCIBD                                      C8       2       2       0   .abs_section_c8
+     _SCIACR2                                    CA       1       1       0   .abs_section_ca
+     _SCICR2                                     CB       1       1       0   .abs_section_cb
+     _SCISR1                                     CC       1       1       0   .abs_section_cc
+     _SCISR2                                     CD       1       1       0   .abs_section_cd
+     _SCIDRH                                     CE       1       1       0   .abs_section_ce
+     _SCIDRL                                     CF       1       1       0   .abs_section_cf
+     _SPICR1                                     D8       1       1       0   .abs_section_d8
+     _SPICR2                                     D9       1       1       0   .abs_section_d9
+     _SPIBR                                      DA       1       1       0   .abs_section_da
+     _SPISR                                      DB       1       1       0   .abs_section_db
+     _SPIDR                                      DC       2       2       0   .abs_section_dc
+     _FCLKDIV                                   100       1       1       0   .abs_section_100
+     _FSEC                                      101       1       1       0   .abs_section_101
+     _FCCOBIX                                   102       1       1       0   .abs_section_102
+     _FCNFG                                     104       1       1       0   .abs_section_104
+     _FERCNFG                                   105       1       1       0   .abs_section_105
+     _FSTAT                                     106       1       1       0   .abs_section_106
+     _FERSTAT                                   107       1       1       0   .abs_section_107
+     _FPROT                                     108       1       1       0   .abs_section_108
+     _DFPROT                                    109       1       1       0   .abs_section_109
+     _FCCOB                                     10A       2       2       0   .abs_section_10a
+     _FOPT                                      110       1       1       0   .abs_section_110
+     _IVBR                                      120       1       1       1   .abs_section_120
+     _CANCTL0                                   140       1       1       0   .abs_section_140
+     _CANCTL1                                   141       1       1       0   .abs_section_141
+     _CANBTR0                                   142       1       1       0   .abs_section_142
+     _CANBTR1                                   143       1       1       0   .abs_section_143
+     _CANRFLG                                   144       1       1       0   .abs_section_144
+     _CANRIER                                   145       1       1       0   .abs_section_145
+     _CANTFLG                                   146       1       1       0   .abs_section_146
+     _CANTIER                                   147       1       1       0   .abs_section_147
+     _CANTARQ                                   148       1       1       0   .abs_section_148
+     _CANTAAK                                   149       1       1       0   .abs_section_149
+     _CANTBSEL                                  14A       1       1       0   .abs_section_14a
+     _CANIDAC                                   14B       1       1       0   .abs_section_14b
+     _CANMISC                                   14D       1       1       0   .abs_section_14d
+     _CANRXERR                                  14E       1       1       0   .abs_section_14e
+     _CANTXERR                                  14F       1       1       0   .abs_section_14f
+     _CANIDAR0                                  150       1       1       0   .abs_section_150
+     _CANIDAR1                                  151       1       1       0   .abs_section_151
+     _CANIDAR2                                  152       1       1       0   .abs_section_152
+     _CANIDAR3                                  153       1       1       0   .abs_section_153
+     _CANIDMR0                                  154       1       1       0   .abs_section_154
+     _CANIDMR1                                  155       1       1       0   .abs_section_155
+     _CANIDMR2                                  156       1       1       0   .abs_section_156
+     _CANIDMR3                                  157       1       1       0   .abs_section_157
+     _CANIDAR4                                  158       1       1       0   .abs_section_158
+     _CANIDAR5                                  159       1       1       0   .abs_section_159
+     _CANIDAR6                                  15A       1       1       0   .abs_section_15a
+     _CANIDAR7                                  15B       1       1       0   .abs_section_15b
+     _CANIDMR4                                  15C       1       1       0   .abs_section_15c
+     _CANIDMR5                                  15D       1       1       0   .abs_section_15d
+     _CANIDMR6                                  15E       1       1       0   .abs_section_15e
+     _CANIDMR7                                  15F       1       1       0   .abs_section_15f
+     _CANRXIDR0                                 160       1       1       0   .abs_section_160
+     _CANRXIDR1                                 161       1       1       0   .abs_section_161
+     _CANRXIDR2                                 162       1       1       0   .abs_section_162
+     _CANRXIDR3                                 163       1       1       0   .abs_section_163
+     _CANRXDSR0                                 164       1       1       0   .abs_section_164
+     _CANRXDSR1                                 165       1       1       0   .abs_section_165
+     _CANRXDSR2                                 166       1       1       0   .abs_section_166
+     _CANRXDSR3                                 167       1       1       0   .abs_section_167
+     _CANRXDSR4                                 168       1       1       0   .abs_section_168
+     _CANRXDSR5                                 169       1       1       0   .abs_section_169
+     _CANRXDSR6                                 16A       1       1       0   .abs_section_16a
+     _CANRXDSR7                                 16B       1       1       0   .abs_section_16b
+     _CANRXDLR                                  16C       1       1       0   .abs_section_16c
+     _CANRXTSR                                  16E       2       2       0   .abs_section_16e
+     _CANTXIDR0                                 170       1       1       0   .abs_section_170
+     _CANTXIDR1                                 171       1       1       0   .abs_section_171
+     _CANTXIDR2                                 172       1       1       0   .abs_section_172
+     _CANTXIDR3                                 173       1       1       0   .abs_section_173
+     _CANTXDSR0                                 174       1       1       0   .abs_section_174
+     _CANTXDSR1                                 175       1       1       0   .abs_section_175
+     _CANTXDSR2                                 176       1       1       0   .abs_section_176
+     _CANTXDSR3                                 177       1       1       0   .abs_section_177
+     _CANTXDSR4                                 178       1       1       0   .abs_section_178
+     _CANTXDSR5                                 179       1       1       0   .abs_section_179
+     _CANTXDSR6                                 17A       1       1       0   .abs_section_17a
+     _CANTXDSR7                                 17B       1       1       0   .abs_section_17b
+     _CANTXDLR                                  17C       1       1       0   .abs_section_17c
+     _CANTXTBPR                                 17D       1       1       0   .abs_section_17d
+     _CANTXTSR                                  17E       2       2       0   .abs_section_17e
+     _PTT                                       240       1       1      15   .abs_section_240
+     _PTIT                                      241       1       1       0   .abs_section_241
+     _DDRT                                      242       1       1       9   .abs_section_242
+     _RDRT                                      243       1       1       0   .abs_section_243
+     _PERT                                      244       1       1       2   .abs_section_244
+     _PPST                                      245       1       1       2   .abs_section_245
+     _PTTRR                                     247       1       1       0   .abs_section_247
+     _PTS                                       248       1       1       1   .abs_section_248
+     _PTIS                                      249       1       1       0   .abs_section_249
+     _DDRS                                      24A       1       1       2   .abs_section_24a
+     _RDRS                                      24B       1       1       0   .abs_section_24b
+     _PERS                                      24C       1       1       1   .abs_section_24c
+     _PPSS                                      24D       1       1       1   .abs_section_24d
+     _WOMS                                      24E       1       1       0   .abs_section_24e
+     _PTM                                       250       1       1       3   .abs_section_250
+     _PTIM                                      251       1       1       0   .abs_section_251
+     _DDRM                                      252       1       1       4   .abs_section_252
+     _RDRM                                      253       1       1       0   .abs_section_253
+     _PERM                                      254       1       1       0   .abs_section_254
+     _PPSM                                      255       1       1       0   .abs_section_255
+     _WOMM                                      256       1       1       0   .abs_section_256
+     _PTP                                       258       1       1      13   .abs_section_258
+     _PTIP                                      259       1       1       0   .abs_section_259
+     _DDRP                                      25A       1       1       7   .abs_section_25a
+     _RDRP                                      25B       1       1       0   .abs_section_25b
+     _PERP                                      25C       1       1       0   .abs_section_25c
+     _PPSP                                      25D       1       1       0   .abs_section_25d
+     _PIEP                                      25E       1       1       0   .abs_section_25e
+     _PIFP                                      25F       1       1       0   .abs_section_25f
+     _PTJ                                       268       1       1       0   .abs_section_268
+     _PTIJ                                      269       1       1       0   .abs_section_269
+     _DDRJ                                      26A       1       1       0   .abs_section_26a
+     _RDRJ                                      26B       1       1       0   .abs_section_26b
+     _PERJ                                      26C       1       1       0   .abs_section_26c
+     _PPSJ                                      26D       1       1       0   .abs_section_26d
+     _PIEJ                                      26E       1       1       0   .abs_section_26e
+     _PIFJ                                      26F       1       1       0   .abs_section_26f
+     _PT01AD                                    270       2       2       0   .abs_section_270
+     _DDR01AD                                   272       2       2       7   .abs_section_272
+     _RDR01AD                                   274       2       2       0   .abs_section_274
+     _PER01AD                                   276       2       2       7   .abs_section_276
+     _CPMUHTCTL                                 2F0       1       1       0   .abs_section_2f0
+     _CPMULVCTL                                 2F1       1       1       0   .abs_section_2f1
+     _CPMUAPICTL                                2F2       1       1       0   .abs_section_2f2
+     _CPMUAPITR                                 2F3       1       1       0   .abs_section_2f3
+     _CPMUAPIR                                  2F4       2       2       0   .abs_section_2f4
+     _CPMUHTTR                                  2F7       1       1       0   .abs_section_2f7
+     _CPMUIRCTRIM                               2F8       2       2       0   .abs_section_2f8
+     _CPMUOSC                                   2FA       1       1       1   .abs_section_2fa
+     _CPMUPROT                                  2FB       1       1       0   .abs_section_2fb
+     _CPMUTEST2                                 2FC       1       1       0   .abs_section_2fc
+     u16Current_Period                         2900       2       2      17   .data       
+     u16Previous_Period                        2902       2       2       6   .data       
+     Spark_Load_Map_Values                     2904       8       8       1   .data       
+     Spark_RPM_Map_Values                      290C      3E      62       1   .data       
+     Fuel_Load_Map_Values                      294A      18      24       2   .data       
+     Fuel_RPM_Map_Values                       2962      3E      62       2   .data       
+     Top_Speed                                 29A0       2       2       2   .data       
+     CAL_TPS_LOW                               29A2       2       2       1   .data       
+     CAL_TPS_HIGH                              29A4       2       2       1   .data       
+     u16Spark_Modifier                         29A6       2       2       1   .data       
+     u16Fuel_Modifier                          29A8       2       2       2   .data       
+     CAL_FM_MSTART                             29AA       2       2       1   .data       
+     u8ENGSTOPSW_Collection_Rate_Counter       29AC       1       1       1   .bss        
+     u8ENGSTOPSW_Buffer_Counter                29AD       1       1       4   .bss        
+     u8ENGSTOPSW_Counter                       29AE       1       1       6   .bss        
+     ENGSTOPSW_Filtered                        29AF       1       1       2   .bss        
+     u8MAP_Buffer_Counter                      29B0       1       1       3   .bss        
+     u8MAP_Counter                             29B1       1       1       1   .bss        
+     TPS_Filtered                              29B2       2       2       2   .bss        
+     u8TPS_Collection_Rate_Counter             29B4       1       1       3   .bss        
+     u8TPS_Buffer_Counter                      29B5       1       1       4   .bss        
+     u8TPS_Counter                             29B6       1       1       2   .bss        
+     VBAT_Filtered                             29B7       2       2       1   .bss        
+     u8VBAT_Collection_Rate_Counter            29B9       1       1       3   .bss        
+     u8VBAT_Buffer_Counter                     29BA       1       1       4   .bss        
+     u8VBAT_Counter                            29BB       1       1       2   .bss        
+     u16Current_Tooth_Time                     29BC       2       2       8   .bss        
+     u16Previous_Tooth_Time                    29BE       2       2       9   .bss        
+     u16Tooth_Noise_Counter                    29C0       2       2       7   .bss        
+     u32Period0                                29C2       4       4      19   .bss        
+     u32Period1                                29C6       4       4      23   .bss        
+     u8Crank_State                             29CA       1       1      15   .bss        
+     u8Teeth_Counter                           29CB       1       1      17   .bss        
+     u16Last_Timeout                           29CC       2       2       3   .bss        
+     u8Engine_Rotation_Synchronization_counter       29CE       1       1       3   .bss        
+     u16Angle_Clock_rate                       29CF       2       2       5   .bss        
+     u8Period_Counter                          29D1       1       1       5   .bss        
+     u16Current_Fuel1_Start                    29D2       2       2       1   .bss        
+     u16Current_Fuel1_Start_Tooth              29D4       2       2       2   .bss        
+     u16Current_Fuel1_Start_Offset             29D6       2       2       3   .bss        
+     u16Current_Fuel1_Pulse                    29D8       2       2       2   .bss        
+     u8Fuel1_Control_State                     29DA       1       1       7   .bss        
+     u8Fuel2_Control_State                     29DB       1       1       1   .bss        
+     u8Fuel_Controller_Mode                    29DC       1       1       5   .bss        
+     u16Load.1                                 29DD       2       2       2   .bss        
+     u16RPM.2                                  29DF       2       2       2   .bss        
+     u16Load.3                                 29E1       2       2       2   .bss        
+     u16RPM.4                                  29E3       2       2       2   .bss        
+     RAW_ADC                                   29E5      20      32      15   .bss        
+     u16Crank_Speed                            2A05       2       2       1   .bss        
+     u16Current_Spark1_Start                   2A07       2       2       3   .bss        
+     u16Current_Spark1_Dwell                   2A09       2       2       3   .bss        
+     u16Current_Spark1_Dwell_Tooth             2A0B       2       2       6   .bss        
+     u16Current_Spark1_Dwell_Offset            2A0D       2       2       3   .bss        
+     u8Spark1_State                            2A0F       1       1       9   .bss        
+     u8Spark2_State                            2A10       1       1       1   .bss        
+     u8Spark_Controller_Mode                   2A11       1       1       5   .bss        
+     u8Spark1_Event_Counter                    2A12       1       1       4   .bss        
+     u16Load.1                                 2A13       2       2       2   .bss        
+     u16RPM.2                                  2A15       2       2       1   .bss        
+     temp.3                                    2A17       2       2       1   .bss        
+     u16Next_Fuel1_Start                       2A19       2       2       2   .bss        
+     u16Next_Fuel1_Start_Tooth                 2A1B       2       2       2   .bss        
+     u16Next_Fuel1_Pulse                       2A1D       2       2       2   .bss        
+     u16Next_Fuel1_Start_Offset                2A1F       2       2       2   .bss        
+     u16Next_Spark1_Start                      2A21       2       2       4   .bss        
+     u16Next_Spark1_Dwell                      2A23       2       2       2   .bss        
+     u16Next_Spark1_Dwell_Tooth                2A25       2       2       2   .bss        
+     u16Next_Spark1_Dwell_Offset               2A27       2       2       2   .bss        
+     u16Fuel_Start_Angle                       2A29       2       2       9   .bss        
+     u16Fuel_Start_Tooth                       2A2B       2       2       8   .bss        
+     u16Fuel_Pulse_Width                       2A2D       2       2       4   .bss        
+     u16Fuel_Angle_Offset                      2A2F       2       2       4   .bss        
+     u16Spark_Start_Angle                      2A31       2       2       8   .bss        
+     u16Spark_Dwell_Angle                      2A33       2       2       2   .bss        
+     u16Spark_Dwell                            2A35       2       2       2   .bss        
+     u16Spark_Dwell_Tooth                      2A37       2       2       6   .bss        
+     u16Spark_Dwell_Offset                     2A39       2       2       3   .bss        
+     TPS_LOW                                   2A3B       2       2       1   .bss        
+     TPS_HIGH                                  2A3D       2       2       1   .bss        
+     MSTART_Counter                            2A3F       1       1       3   .bss        
+     Fuel_Add                                  2A40       2       2       1   .bss        
+     Fuel_Cut                                  2A42       2       2       1   .bss        
+     Spark_Advance                             2A44       2       2       1   .bss        
+     Spark_Retard                              2A46       2       2       1   .bss        
+     SM_MIT                                    2A48       2       2       1   .bss        
+     SM_AIAT                                   2A4A       2       2       1   .bss        
+     SM_AECT                                   2A4C       2       2       1   .bss        
+     SM_AALT                                   2A4E       2       2       1   .bss        
+     SM_AAF                                    2A50       2       2       1   .bss        
+     SM_AKNOCK                                 2A52       2       2       1   .bss        
+     SM_START                                  2A54       2       2       1   .bss        
+     SM_EGR                                    2A56       2       2       1   .bss        
+     FM_MO                                     2A58       2       2       2   .bss        
+     FM_MACCEL                                 2A5A       2       2       1   .bss        
+     FM_MSTART                                 2A5C       2       2       6   .bss        
+     au8ENGSTOPSW_Data_Buffer                  2A5E       3       3       5   .common     
+     MAP_Data_Buffer                           2A61       8       8       4   .common     
+     TPS_Data_Buffer                           2A69      20      32       3   .common     
+     VBAT_Data_Buffer                          2A89      20      32       3   .common     
+     au16Prior_Periods                         2AA9      60      96       4   .common     
+     u8Buffer_Counter                          2B09       1       1       5   .common     
+     Signature_Valid                           2B0A       1       1       4   .common     
+     Test_VAR                                  2B0B       1       1       1   .common     
+     au16AnalogSamples                         2B0C     100     256       1   .common     
+     au16AnalogAverage                         2C0C      10      16       1   .common     
+     u8Duty_High                               2C1C       1       1       1   .common     
+     u8Duty_Low                                2C1D       1       1       1   .common     
+     gu8Index                                  2C1E       1       1       1   .common     
+     gu8Scheduler_Status                       2C1F       1       1       1   .common     
+     gu8Scheduler_Counter                      2C20       1       1       4   .common     
+     gu8Scheduler_Thread_ID                    2C21       1       1       9   .common     
+     gu8Scheduler_Thread_ID_Backup             2C22       1       1       4   .common     
+     u8_10ms_Counter                           2C23       1       1       3   .common     
+     u8_50ms_Counter                           2C24       1       1       3   .common     
+     u8_100ms_Counter                          2C25       1       1       3   .common     
+     Current_Appl_State                        2C26       1       1      11   .common     
+     Last_Appl_State                           2C27       1       1       4   .common     
+     SAFETY                                    2C28       1       1       2   .common     
+     LOAD                                      2C29       2       2       5   .common     
+     Engine_Speed                              2C2B       2       2       9   .common     
+     Injector1_Fault                           2C2D       1       1       1   .common     
+     Ignition1_Fault                           2C2E       1       1       1   .common     
+     u16Fuel_Pump_Timeout                      2C2F       2       2       4   .common     
+     _Startup                                  C000       F      15       1   .init       
+     Spark_Timing_Map                          C019      F8     248       1   .rodata     
+     Fuel_Pulse_Angle_Map                      C111     2E8     744       1   .rodata     
+     Fuel_Pulse_Width_Map                      C3F9     2E8     744       1   .rodata     
+     Crank_State_Machine_Isr                   C6E1     202     514      19   NON_BANKED  
+     Crank_Missing_Tooth_Isr                   C8E3      43      67       1   NON_BANKED  
+     Crank_Timeout_Isr                         C926       5       5       1   NON_BANKED  
+     Fuel1_Control_Isr                         C92B      3A      58       1   NON_BANKED  
+     Dummy_D_Isr                               C965       4       4     108   NON_BANKED  
+     ATD0_conversion_complete                  C969      3A      58       1   NON_BANKED  
+     Clock_Monitor_Isr                         C9A3       1       1       1   NON_BANKED  
+     Spark1_Control_Isr                        C9A4      3E      62       1   NON_BANKED  
+     Data_Management_Analogs                   C9E2       1       1       1   NON_BANKED  
+     Data_Management_Digitals                  C9E3       1       1       1   NON_BANKED  
+     Scheduler_RTI_Isr                         C9E4      65     101       1   NON_BANKED  
+     _LSHL                                     CA49      11      17       2   NON_BANKED  
+     _LSHRU                                    CA5A      11      17       1   NON_BANKED  
+     _LCMP                                     CA6B      19      25       2   NON_BANKED  
+     _lDivMod                                  CA84      BE     190       1   NON_BANKED  
+     _LDIVU                                    CB42       E      14       6   NON_BANKED  
+     _CASE_CHECKED                             CB50       B      11       1   NON_BANKED  
+     _CASE_CHECKED_BYTE                        CB5B      14      20       1   NON_BANKED  
+     vectors                                   FF10      EE     238       0   .abs_section_ff10
+     Init                                     88000      29      41       2   .text       
+     vfnENGSTOPSW_Init                        88029      11      17       2   .text       
+     vfnENGSTOPSW_Monitoring                  8803A      24      36       2   .text       
+     vfnENGSTOPSW_Filter                      8805E      32      50       2   .text       
+     vfnInputs_Outputs_Init                   88090     107     263       4   .text       
+     vfnMIL_Init                              88197       5       5       2   .text       
+     vfnMIL_Off                               8819C       5       5       2   .text       
+     vfnO2H_Init                              881A1       5       5       2   .text       
+     vfnO2H_On                                881A6       5       5       4   .text       
+     vfnRelays_Initialization                 881AB      1B      27       2   .text       
+     vfnRelayControl                          881C6      2A      42      10   .text       
+     vfnMAP_Init                              881F0      17      23       2   .text       
+     vfnMAP_Monitoring                        88207      34      52       2   .text       
+     vfnTPS_Init                              8823B      17      23       2   .text       
+     vfnTPS_Monitoring                        88252      2E      46       2   .text       
+     vfnTPS_ADC_Filter                        88280      36      54       2   .text       
+     vfnVBAT_Init                             882B6      17      23       2   .text       
+     vfnVBAT_Monitoring                       882CD      2E      46       2   .text       
+     vfnVBAT_ADC_Filter                       882FB      2A      42       2   .text       
+     vfnInit_Crank_Sensing                    88325      21      33       2   .text       
+     vfnGoTo_Crank_FirstEdge                  88346      1F      31       8   .text       
+     vfnGoTo_SYNCHRONIZED_4C                  88365       E      14       2   .text       
+     u8Calculate_Tooth_Period                 88373      37      55      10   .text       
+     u8Valid_Period                           883AA      93     147       6   .text       
+     vfnTooth_Period_Store                    8843D      1C      28      10   .text       
+     vfnSet_Period_Timeout                    88459      4D      77       6   .text       
+     u8Missing_Tooth_Gap                      884A6      47      71       4   .text       
+     u8Tooth_After_Gap                        884ED      47      71       4   .text       
+     vfnIncrement_Teeth_Counter               88534      1F      31       4   .text       
+     vfnSet_Fuel_Controller                   88553      38      56      10   .text       
+     vfnDisable_Fuel1_Timer                   8858B       E      14       2   .text       
+     vfnFuel_Direct_Control                   88599      1B      27       2   .text       
+     u16Read_Fuel_Pulse_Angle_Map             885B4      38      56       2   .text       
+     u16Read_Fuel_Pulse_Width_Map             885EC      38      56       2   .text       
+     vfnUpdate_Current_Fuel1_Params           88624      19      25       6   .text       
+     vfnFuel_4C_Convert                       8863D       1       1       2   .text       
+     vfnSchedule_Fuel1_Pulse                  8863E      4B      75       6   .text       
+     vfnADC_Init                              88689      7F     127       2   .text       
+     vfnCpu_init                              88708       F      15       2   .text       
+     vfnClock_Init                            88717      39      57       2   .text       
+     vfMC33812_Init                           88750      3B      59       2   .text       
+     vfnSet_PWM_Duty_Cycle                    8878B      11      17       2   .text       
+     vfn_Update_Crank_Speed                   8879C      13      19       2   .text       
+     vfnTimerModule_Init                      887AF      2A      42       2   .text       
+     vfnSet_Spark_Controller                  887D9      32      50       8   .text       
+     vfnDisable_Spark1_Timer                  8880B       E      14       2   .text       
+     vfnSpark_Direct_Control                  88819      1C      28       2   .text       
+     u16Read_Spark_Map                        88835      37      55       2   .text       
+     vfnUpdate_Current_Spark1_Params          8886C      19      25       4   .text       
+     vfnSpark_4C_Convert                      88885      1B      27       2   .text       
+     vfnSpark1_Counter_Reset                  888A0       4       4       4   .text       
+     vfnSchedule_Spark1_Pulse                 888A4      93     147       6   .text       
+     u16Interpolation                         88937      D6     214       6   .text       
+     u16Rev_Interpolation                     88A0D      D0     208       6   .text       
+     Data_Management_Init                     88ADD      19      25       2   .text       
+     Data_Management                          88AF6      13      19       2   .text       
+     vfnECU_Init                              88B09      1D      29       2   .text       
+     Engine_Management_Init                   88B26      13      19       2   .text       
+     Engine_Management                        88B39      25      37       2   .text       
+     vfnFuel1_Start                           88B5E      23      35       2   .text       
+     vfnFuel1_Pulse                           88B81      10      16       2   .text       
+     vfnCalc_Fuel_Start                       88B91      98     152       2   .text       
+     u16Calc_Fuel_Pulse_Width                 88C29      2A      42       2   .text       
+     vfnSpark1_Start                          88C53      14      20       2   .text       
+     vfnSpark1_Dwell                          88C67      20      32       2   .text       
+     u16Calc_Spark_Start                      88C87      4D      77       2   .text       
+     vfnCalc_Spark_Dwell                      88CD4      76     118       2   .text       
+     main                                     88D4A      29      41       2   .text       
+     vfnScheduler_Init                        88D73       F      15       2   .text       
+     vfnScheduler_Start                       88D82       4       4       2   .text       
+     vfnTask_Scheduler                        88D86      69     105       2   .text       
+     User_Management_Init                     88DEF      2C      44       2   .text       
+     User_Management                          88E1B     101     257       7   .text       
+     vfnGoto_STOP                             88F1C      34      52       2   .text       
+     vfnGoto_START                            88F50      1C      28       2   .text       
+     vfnGoto_RUN                              88F6C      18      24       2   .text       
+     vfnGoto_OVERRUN                          88F84      15      21       2   .text       
+     Fuel_Pump_Controller_Init                88F99      10      16       8   .text       
+     Fuel_Pump_Controller                     88FA9      39      57       4   .text       
+     Update_Modifiers                         88FE2      31      49       4   .text       
+     MIL_Init                                 89013       5       5       2   .text       
+     MIL_Set                                  89018       5       5       4   .text       
+     MIL_Clear                                8901D       5       5       2   .text       
+     Get_Injector1_Fault                      89022       2       2       2   .text       
+     Get_Ignition1_Fault                      89024       2       2       2   .text       
+     Safety_Check                             89026       2       2       4   .text       
+     RPM_Calculate                            89028      4F      79       4   .text       
+     Load_Calculate                           89077       7       7       6   .text       
+
+*********************************************************************************************
+UNUSED-OBJECTS SECTION
+---------------------------------------------------------------------------------------------
+NOT USED PROCEDURES
+MIL.c.o:
+  vfnMIL_On 
+O2H.c.o:
+  vfnO2H_Off 
+MAP.c.o:
+  vfnMAP_ADC_Filter 
+Fuel_Control.c.o:
+  vfnFuel_Signal_Status vfnFuel_Map_CopytoRAM Fuel2_Control_Isr 
+ADC.c.o:
+  vfnADC_Read_Channels vfnADC_Compute_Average u16fnADC_Read_One_Channel 
+PWM.c.o:
+  vfnPWM_Init vfn_Stop_Crank_Motor 
+Timers.c.o:
+  vfnPIT_init vfnTimer_Config_InputCompare 
+Spark_Control.c.o:
+  vfnSpark_Map_CopytoRAM Spark2_Control_Isr 
+User Management.c.o:
+  vfnGoto_INIT Get_Injector2_Fault Get_Ignition2_Fault 
+rtshc12.c.o (ansibi.lib):
+  _BSHL _BSHRS _BSHRU _BDIVMODU _BDIVMODS _ISHL _ISHRU _ISHRS _LSHRS _LADD 
+  _LSUB _LAND _LOR _LXOR _LCMP_P _LCMP_PP _LNEG _LCOM _LINC _LDEC _LMUL 
+  _LMULU16x32 _LMULS16x32 _NEG_P _LDIVS _LMODU _LMODS _ILSEXT _COPY 
+  _CASE_DIRECT _CASE_DIRECT_BYTE _CASE_SEARCH _CASE_SEARCH_BYTE _CASE_SEARCH_8 
+  _CASE_SEARCH_8_BYTE _FCALL _FPCMP 
+NOT USED VARIABLES
+MAP.c.o:
+  MAP_Filtered u8MAP_Collection_Rate_Counter 
+Crank_Sensing.c.o:
+  u16Engine_Position_Degrees 
+Fuel_Control.c.o:
+  Fuel_Pulse_Angle_Map_RAM Fuel_Pulse_Width_Map_RAM 
+ADC.c.o:
+  signals_array signals_pointer u8BufferStoreIndex.1 u8ADC_Status 
+  samples_array 
+Cpu.c.o:
+  u16PLL_Loss_of_Lock_Counter gu16ClockGlobalStatus 
+Spark_Control.c.o:
+  Spark_Timing_Map_RAM 
+Application Map.c.o:
+  Spark_Timing_Map_RAM Fuel_Pulse_Angle_Map_RAM Fuel_Pulse_Width_Map_RAM 
+User Management.c.o:
+  FM_MLOAD FM_MECT FM_MIAT FM_MBATV FM_MBAP FM_MTRIM CAL_FM_MACCEL 
+  CAL_ISM_RANGE CAL_ISM_TARGET CAL_ISM_MAX_CONTROL CAL_ISM_MIN_CONTROL 
+  CAL_ISM_START TIP_IN TIP_OUT TIP_Counter SM_IT_DES SM_IT_BASE FM_PWREQ 
+  FM_PWBASE CAL_SM_IT_DES CAL_SM_IT_BASE CAL_SM_MIT CAL_SM_AIAT CAL_SM_AECT 
+  CAL_SM_AALT CAL_SM_AAF CAL_SM_AKNOCK CAL_SM_START CAL_SM_EGR CAL_FM_PWREQ 
+  CAL_FM_PWBASE CAL_FM_MO CAL_FM_MLOAD CAL_FM_MECT CAL_FM_MIAT CAL_FM_MBATV 
+  CAL_FM_MBAP CAL_FM_MTRIM Injector1_State Ignition1_State u16ISM_Timeout 
+  ISM_ZERO ISM_RANGE ISM_TARGET ISM_MAX_CONTROL ISM_MIN_CONTROL ISM_START 
+  ISM_STEP ISM_LAST_STEP ISM_NEXT_STEP 
+rtshc12.c.o (ansibi.lib):
+  _PowOfTwo_8 _PowOfTwo_16 _PowOfTwo_32 errno 
+
+*********************************************************************************************
+COPYDOWN SECTION
+---------------------------------------------------------------------------------------------
+------- ROM-ADDRESS: 0xCB6F ---- SIZE       4 ---
+Filling bytes inserted
+ 00AB2901
+------- ROM-ADDRESS: 0xCB73 ---- RAM-ADDRESS: 0x2901 ---- SIZE       1 ---
+Name of initialized Object : u16Current_Period:1
+ 01
+------- ROM-ADDRESS: 0xCB74 ---- SIZE       1 ---
+Filling bytes inserted
+ 00
+------- ROM-ADDRESS: 0xCB75 ---- RAM-ADDRESS: 0x2903 ---- SIZE       1 ---
+Name of initialized Object : u16Previous_Period:1
+ 01
+------- ROM-ADDRESS: 0xCB76 ---- SIZE       1 ---
+Filling bytes inserted
+ 00
+------- ROM-ADDRESS: 0xCB77 ---- RAM-ADDRESS: 0x2905 ---- SIZE       7 ---
+Name of initialized Object : Spark_Load_Map_Values:1
+ 9700A500BA 00DC
+------- ROM-ADDRESS: 0xCB7E ---- RAM-ADDRESS: 0x290C ---- SIZE      62 ---
+Name of initialized Object : Spark_RPM_Map_Values
+ 082306F906 1A056C04E2 0470041103
+ C1037C0341 030D02DF02 B602910271
+ 0253023802 1F020801F4 01E001CE01
+ BE01AF01A0 0193018601 7A016F0165
+ 015B
+------- ROM-ADDRESS: 0xCBBC ---- SIZE       3 ---
+Filling bytes inserted
+ 000000
+------- ROM-ADDRESS: 0xCBBF ---- RAM-ADDRESS: 0x294D ---- SIZE      21 ---
+Name of initialized Object : Fuel_Load_Map_Values:3
+ 5100CC0199 0266033303 FF04CC0666
+ 09990CCC0F FF
+------- ROM-ADDRESS: 0xCBD4 ---- RAM-ADDRESS: 0x2962 ---- SIZE      62 ---
+Name of initialized Object : Fuel_RPM_Map_Values
+ 082306F906 1A056C04E2 0470041103
+ C1037C0341 030D02DF02 B602910271
+ 0253023802 1F020801F4 01E001CE01
+ BE01AF01A0 0193018601 7A016F0165
+ 015B
+------- ROM-ADDRESS: 0xCC12 ---- RAM-ADDRESS: 0x29A0 ---- SIZE       2 ---
+Name of initialized Object : Top_Speed
+ FFFF
+------- ROM-ADDRESS: 0xCC14 ---- RAM-ADDRESS: 0x29A2 ---- SIZE       2 ---
+Name of initialized Object : CAL_TPS_LOW
+ 0225
+------- ROM-ADDRESS: 0xCC16 ---- RAM-ADDRESS: 0x29A4 ---- SIZE       2 ---
+Name of initialized Object : CAL_TPS_HIGH
+ 0D1E
+------- ROM-ADDRESS: 0xCC18 ---- SIZE       1 ---
+Filling bytes inserted
+ 00
+------- ROM-ADDRESS: 0xCC19 ---- RAM-ADDRESS: 0x29A7 ---- SIZE       1 ---
+Name of initialized Object : u16Spark_Modifier:1
+ 01
+------- ROM-ADDRESS: 0xCC1A ---- SIZE       1 ---
+Filling bytes inserted
+ 00
+------- ROM-ADDRESS: 0xCC1B ---- RAM-ADDRESS: 0x29A9 ---- SIZE       1 ---
+Name of initialized Object : u16Fuel_Modifier:1
+ 01
+------- ROM-ADDRESS: 0xCC1C ---- RAM-ADDRESS: 0x29AA ---- SIZE       2 ---
+Name of initialized Object : CAL_FM_MSTART
+ 0D48
+------- ROM-ADDRESS: 0xCC1E ---- SIZE       2 ---
+Filling bytes inserted
+ 0000
+
+*********************************************************************************************
+OBJECT-DEPENDENCIES SECTION
+---------------------------------------------------------------------------------------------
+_Startup                  USES __SEG_END_SSTACK Init main 
+Crank_State_Machine_Isr   USES _TIE u8Crank_State _CASE_CHECKED 
+                                Crank_State_Machine_Isr _TC7 u16Previous_Tooth_Time u32Period1 
+                                u16Last_Timeout u8Calculate_Tooth_Period vfnTooth_Period_Store 
+                                vfnSet_Period_Timeout u8Valid_Period u8Missing_Tooth_Gap 
+                                u8Teeth_Counter u8Engine_Rotation_Synchronization_counter 
+                                vfnGoTo_Crank_FirstEdge u8Tooth_After_Gap vfnIncrement_Teeth_Counter 
+                                vfnMAP_Monitoring Signature_Valid u8Buffer_Counter 
+                                MAP_Data_Buffer vfnGoTo_SYNCHRONIZED_4C u16Current_Period _TC5 
+                                vfnSpark1_Counter_Reset u16Current_Spark1_Dwell_Tooth u8Spark1_State 
+                                u16Tooth_Noise_Counter u16Current_Tooth_Time u16Angle_Clock_rate 
+                                vfnSchedule_Spark1_Pulse vfnSchedule_Fuel1_Pulse 
+Crank_Missing_Tooth_Isr   USES _TIE u16Previous_Tooth_Time u16Previous_Period 
+                                u16Current_Tooth_Time u16Current_Period vfnSet_Period_Timeout 
+                                u16Angle_Clock_rate u8Teeth_Counter vfnSchedule_Spark1_Pulse 
+                                vfnSchedule_Fuel1_Pulse 
+Crank_Timeout_Isr         USES vfnGoTo_Crank_FirstEdge 
+Fuel1_Control_Isr         USES u8Fuel1_Control_State _TC0 
+                                u16Current_Fuel1_Pulse _TCTL2 _TIE vfnUpdate_Current_Fuel1_Params 
+Dummy_D_Isr               USES Test_VAR 
+ATD0_conversion_complete  USES _ATDDR0 RAW_ADC _ATDDR1 _ATDDR2 _ATDDR3 _ATDDR4 
+                                _ATDDR5 _ATDDR6 _ATDDR7 _ATDDR8 _ATDDR9 _ATDCTL45 
+                                _ATDSTAT0 
+Spark1_Control_Isr        USES u8Spark1_State u8Spark1_Event_Counter _TIE 
+                                vfnUpdate_Current_Spark1_Params _TC2 _TCTL2 
+Scheduler_RTI_Isr         USES _CPMUFLG gu8Scheduler_Counter u8_100ms_Counter 
+                                gu8Scheduler_Thread_ID u8_50ms_Counter u8_10ms_Counter 
+_LDIVU                    USES _lDivMod 
+vectors                   USES Dummy_D_Isr Data_Management_Analogs 
+                                Data_Management_Digitals ATD0_conversion_complete 
+                                Crank_State_Machine_Isr Crank_Missing_Tooth_Isr Crank_Timeout_Isr 
+                                Spark1_Control_Isr Fuel1_Control_Isr Scheduler_RTI_Isr _Startup 
+                                Clock_Monitor_Isr 
+Init                      USES _startupData 
+vfnENGSTOPSW_Init         USES au8ENGSTOPSW_Data_Buffer u8ENGSTOPSW_Counter 
+vfnENGSTOPSW_Monitoring   USES _PORTAB u8ENGSTOPSW_Buffer_Counter 
+                                au8ENGSTOPSW_Data_Buffer u8ENGSTOPSW_Collection_Rate_Counter 
+                                vfnENGSTOPSW_Filter 
+vfnENGSTOPSW_Filter       USES u8ENGSTOPSW_Counter au8ENGSTOPSW_Data_Buffer 
+                                ENGSTOPSW_Filtered 
+vfnInputs_Outputs_Init    USES _OCPD _DDRT _PERT _PPST _DDRAB _DDRS _PERS 
+                                _PPSS _DDRM _DDRP _PTP vfnInputs_Outputs_Init _PTT 
+                                _PORTAB _PTS _PTM _DDR01AD _ATDDIEN _PER01AD 
+vfnMIL_Init               USES vfnMIL_Off 
+vfnMIL_Off                USES _PTP 
+vfnO2H_Init               USES vfnO2H_On 
+vfnO2H_On                 USES _PTP 
+vfnRelays_Initialization  USES vfnRelayControl 
+vfnRelayControl           USES _PTT _PTP 
+vfnMAP_Init               USES MAP_Data_Buffer u8MAP_Counter 
+vfnMAP_Monitoring         USES u8Teeth_Counter u8MAP_Buffer_Counter RAW_ADC 
+                                MAP_Data_Buffer 
+vfnTPS_Init               USES TPS_Data_Buffer u8TPS_Counter 
+vfnTPS_Monitoring         USES u8TPS_Collection_Rate_Counter 
+                                u8TPS_Buffer_Counter RAW_ADC TPS_Data_Buffer vfnTPS_ADC_Filter 
+vfnTPS_ADC_Filter         USES TPS_Data_Buffer u8TPS_Counter _LSHRU 
+                                TPS_Filtered 
+vfnVBAT_Init              USES VBAT_Data_Buffer u8VBAT_Counter 
+vfnVBAT_Monitoring        USES u8VBAT_Collection_Rate_Counter 
+                                u8VBAT_Buffer_Counter RAW_ADC VBAT_Data_Buffer vfnVBAT_ADC_Filter 
+vfnVBAT_ADC_Filter        USES VBAT_Data_Buffer u8VBAT_Counter VBAT_Filtered 
+vfnInit_Crank_Sensing     USES vfnTimerModule_Init _TIOS _OCPD _TCTL3 _TIE 
+vfnGoTo_Crank_FirstEdge   USES u8Engine_Rotation_Synchronization_counter 
+                                u8Crank_State au16Prior_Periods u8Period_Counter 
+vfnGoTo_SYNCHRONIZED_4C   USES vfnSpark_4C_Convert vfnFuel_4C_Convert 
+                                u8Crank_State 
+u8Calculate_Tooth_Period  USES _TC7 u16Current_Tooth_Time 
+                                u16Previous_Tooth_Time u16Current_Period 
+u8Valid_Period            USES u16Previous_Period u32Period0 _LDIVU u32Period1 
+                                u16Current_Period 
+vfnTooth_Period_Store     USES u8Period_Counter u16Current_Period 
+                                au16Prior_Periods 
+vfnSet_Period_Timeout     USES u16Current_Period u32Period1 _LDIVU 
+                                u16Last_Timeout u16Previous_Period u16Current_Tooth_Time 
+                                u16Previous_Tooth_Time _TC7 _TC4 
+u8Missing_Tooth_Gap       USES u16Previous_Period u32Period0 u16Current_Period 
+                                u32Period1 _LSHL _LDIVU _LCMP 
+u8Tooth_After_Gap         USES u16Previous_Period u32Period0 u16Current_Period 
+                                u32Period1 _LSHL _LDIVU _LCMP 
+vfnIncrement_Teeth_Counter USES u8Crank_State u8Teeth_Counter 
+vfnSet_Fuel_Controller    USES u8Fuel_Controller_Mode _OCPD _TIOS _TCTL2 
+                                _CFORC vfnUpdate_Current_Fuel1_Params 
+                                u8Fuel1_Control_State u8Fuel2_Control_State 
+vfnDisable_Fuel1_Timer    USES _TIE _OCPD _TIOS _PTT 
+vfnFuel_Direct_Control    USES u8Fuel1_Control_State _PTT 
+u16Read_Fuel_Pulse_Angle_Map USES Fuel_Load_Map_Values u16Interpolation 
+                                u16Load.1 Fuel_RPM_Map_Values u16Rev_Interpolation 
+                                u16RPM.2 Fuel_Pulse_Angle_Map 
+u16Read_Fuel_Pulse_Width_Map USES Fuel_Load_Map_Values u16Interpolation 
+                                u16Load.3 Fuel_RPM_Map_Values u16Rev_Interpolation 
+                                u16RPM.4 Fuel_Pulse_Width_Map 
+vfnUpdate_Current_Fuel1_Params USES u16Next_Fuel1_Start u16Current_Fuel1_Start 
+                                u16Next_Fuel1_Pulse u16Current_Fuel1_Pulse 
+                                u16Next_Fuel1_Start_Tooth u16Current_Fuel1_Start_Tooth 
+                                u16Next_Fuel1_Start_Offset u16Current_Fuel1_Start_Offset 
+vfnSchedule_Fuel1_Pulse   USES u8Fuel_Controller_Mode 
+                                vfnUpdate_Current_Fuel1_Params u8Teeth_Counter u16Current_Fuel1_Start_Tooth 
+                                u16Current_Fuel1_Start_Offset u16Angle_Clock_rate u16Current_Tooth_Time 
+                                _TCTL2 _TC0 _TIE u8Fuel1_Control_State 
+                                vfnDisable_Fuel1_Timer 
+vfnADC_Init               USES au16AnalogSamples au16AnalogAverage _ATDCTL01 
+                                _ATDCTL23 _ATDCTL45 
+vfnCpu_init               USES _MMCCTL1 _DIRECT _IVBR _IRQCR 
+vfnClock_Init             USES _CPMUSYNR _CPMUREFDIV _CPMUPOSTDIV _CPMUOSC 
+                                _CPMUFLG _ECLKCTL 
+vfMC33812_Init            USES _PTT _DDRT _PORTAB _DDRAB _PORTE _DDRE _PTP 
+                                _DDRP 
+vfnSet_PWM_Duty_Cycle     USES u8Duty_High u8Duty_Low _PWMDTY23 
+vfn_Update_Crank_Speed    USES Safety_Check LOAD u16Crank_Speed 
+                                vfnSet_PWM_Duty_Cycle 
+vfnTimerModule_Init       USES _TIE _TCTL1 _TCTL2 _PACTL _TSCR1 _TSCR2 
+vfnSet_Spark_Controller   USES u8Spark_Controller_Mode _OCPD _TIOS _TCTL2 
+                                _CFORC u8Spark1_State u8Spark2_State 
+vfnDisable_Spark1_Timer   USES _TIE _OCPD _TIOS _PTT 
+vfnSpark_Direct_Control   USES u8Spark1_State _PTT 
+u16Read_Spark_Map         USES Spark_Load_Map_Values u16Interpolation 
+                                u16Load.1 Spark_RPM_Map_Values u16Rev_Interpolation 
+                                u16RPM.2 Spark_Timing_Map temp.3 
+vfnUpdate_Current_Spark1_Params USES u16Next_Spark1_Start 
+                                u16Current_Spark1_Start u16Next_Spark1_Dwell u16Current_Spark1_Dwell 
+                                u16Next_Spark1_Dwell_Tooth u16Current_Spark1_Dwell_Tooth 
+                                u16Next_Spark1_Dwell_Offset u16Current_Spark1_Dwell_Offset 
+vfnSpark_4C_Convert       USES u16Current_Spark1_Start u16Current_Spark1_Dwell 
+                                u16Current_Spark1_Dwell_Tooth 
+vfnSpark1_Counter_Reset   USES u8Spark1_Event_Counter 
+vfnSchedule_Spark1_Pulse  USES vfnUpdate_Current_Spark1_Params 
+                                u8Spark_Controller_Mode u8Spark1_State u8Teeth_Counter 
+                                u16Current_Spark1_Dwell_Tooth u8Spark1_Event_Counter 
+                                u16Current_Spark1_Dwell_Offset u16Angle_Clock_rate u16Current_Tooth_Time 
+                                _TCNT _TCTL2 _TC2 _TIE vfnDisable_Spark1_Timer 
+Data_Management_Init      USES vfnMAP_Init vfnTPS_Init vfnVBAT_Init 
+                                vfnENGSTOPSW_Init vfnMIL_Init vfnO2H_Init 
+Data_Management           USES RAW_ADC vfnVBAT_Monitoring vfnTPS_Monitoring 
+                                vfnENGSTOPSW_Monitoring 
+vfnECU_Init               USES vfnClock_Init vfnCpu_init vfnScheduler_Init 
+                                vfnInputs_Outputs_Init vfnADC_Init vfnRelays_Initialization 
+                                vfMC33812_Init 
+Engine_Management_Init    USES vfnInit_Crank_Sensing vfnGoTo_Crank_FirstEdge 
+                                vfnSet_Fuel_Controller vfnSet_Spark_Controller 
+Engine_Management         USES vfnFuel1_Start Engine_Speed LOAD vfnFuel1_Pulse 
+                                vfnSpark1_Start vfnSpark1_Dwell 
+vfnFuel1_Start            USES vfnCalc_Fuel_Start u16Fuel_Start_Angle 
+                                u16Next_Fuel1_Start u16Fuel_Start_Tooth u16Next_Fuel1_Start_Tooth 
+                                u16Fuel_Angle_Offset u16Next_Fuel1_Start_Offset 
+vfnFuel1_Pulse            USES u16Calc_Fuel_Pulse_Width u16Next_Fuel1_Pulse 
+vfnCalc_Fuel_Start        USES u16Read_Fuel_Pulse_Angle_Map 
+                                u16Fuel_Start_Angle u8Crank_State u16Fuel_Start_Tooth 
+                                u16Fuel_Angle_Offset 
+u16Calc_Fuel_Pulse_Width  USES u16Read_Fuel_Pulse_Width_Map u16Fuel_Modifier 
+                                Fuel_Add Fuel_Cut u16Fuel_Pulse_Width u8Crank_State 
+vfnSpark1_Start           USES u16Calc_Spark_Start u16Next_Spark1_Start 
+vfnSpark1_Dwell           USES u16Next_Spark1_Start vfnCalc_Spark_Dwell 
+                                u16Spark_Start_Angle u16Spark_Dwell u16Next_Spark1_Dwell 
+                                u16Spark_Dwell_Tooth u16Next_Spark1_Dwell_Tooth 
+                                u16Spark_Dwell_Offset u16Next_Spark1_Dwell_Offset 
+u16Calc_Spark_Start       USES u16Read_Spark_Map u16Spark_Start_Angle 
+                                u8Crank_State Spark_Advance Spark_Retard 
+vfnCalc_Spark_Dwell       USES u16Angle_Clock_rate u16Spark_Dwell_Angle 
+                                u16Spark_Dwell_Tooth u16Spark_Dwell_Offset u8Crank_State 
+                                u16Spark_Dwell 
+main                      USES gu8Index vfnECU_Init User_Management_Init 
+                                Data_Management_Init Engine_Management_Init vfnScheduler_Start 
+                                vfnTask_Scheduler 
+vfnScheduler_Init         USES _CPMUCLKS _CPMURTI 
+vfnScheduler_Start        USES _CPMUINT 
+vfnTask_Scheduler         USES gu8Scheduler_Thread_ID 
+                                gu8Scheduler_Thread_ID_Backup Engine_Management Data_Management 
+                                vfn_Update_Crank_Speed User_Management gu8Scheduler_Status 
+User_Management_Init      USES SAFETY Engine_Speed LOAD CAL_TPS_LOW TPS_LOW 
+                                CAL_TPS_HIGH TPS_HIGH Fuel_Pump_Controller_Init vfnO2H_On 
+                                Current_Appl_State Update_Modifiers 
+User_Management           USES Current_Appl_State _CASE_CHECKED_BYTE MIL_Init 
+                                User_Management Engine_Speed Load_Calculate CAL_FM_MSTART 
+                                FM_MSTART FM_MO Top_Speed vfnGoto_OVERRUN vfnGoto_START 
+                                MSTART_Counter vfnGoto_RUN Get_Injector1_Fault 
+                                Injector1_Fault Get_Ignition1_Fault Ignition1_Fault 
+                                vfnGoto_STOP Update_Modifiers Fuel_Pump_Controller MIL_Set 
+                                RPM_Calculate MIL_Clear Safety_Check SAFETY 
+vfnGoto_STOP              USES vfnSet_Fuel_Controller vfnSet_Spark_Controller 
+                                vfnSchedule_Spark1_Pulse vfnSchedule_Fuel1_Pulse vfnFuel_Direct_Control 
+                                vfnSpark_Direct_Control Fuel_Pump_Controller_Init Current_Appl_State 
+                                Last_Appl_State 
+vfnGoto_START             USES vfnSet_Fuel_Controller vfnSet_Spark_Controller 
+                                Fuel_Pump_Controller_Init Current_Appl_State Last_Appl_State 
+vfnGoto_RUN               USES vfnSet_Fuel_Controller vfnSet_Spark_Controller 
+                                Current_Appl_State Last_Appl_State 
+vfnGoto_OVERRUN           USES vfnSet_Fuel_Controller 
+                                Fuel_Pump_Controller_Init Current_Appl_State Last_Appl_State 
+Fuel_Pump_Controller_Init USES vfnRelayControl u16Fuel_Pump_Timeout 
+Fuel_Pump_Controller      USES Current_Appl_State u16Fuel_Pump_Timeout 
+                                vfnRelayControl 
+Update_Modifiers          USES SM_AIAT SM_AECT SM_AALT SM_AAF SM_AKNOCK 
+                                SM_START SM_EGR SM_MIT u16Spark_Modifier FM_MSTART 
+                                FM_MACCEL FM_MO u16Fuel_Modifier 
+MIL_Init                  USES MIL_Set 
+MIL_Set                   USES _PTP 
+MIL_Clear                 USES _PTP 
+RPM_Calculate             USES au16Prior_Periods _LDIVU Engine_Speed 
+Load_Calculate            USES TPS_Filtered LOAD 
+
+*********************************************************************************************
+DEPENDENCY TREE
+*********************************************************************************************
+ main and _Startup Group
+ | 
+ +- main                
+ |  | 
+ |  +- vfnECU_Init         
+ |  |  | 
+ |  |  +- vfnClock_Init       
+ |  |  |    
+ |  |  +- vfnCpu_init         
+ |  |  |    
+ |  |  +- vfnScheduler_Init   
+ |  |  |    
+ |  |  +- vfnInputs_Outputs_Init
+ |  |  |    
+ |  |  +- vfnADC_Init         
+ |  |  |    
+ |  |  +- vfnRelays_Initialization
+ |  |  |  | 
+ |  |  |  +- vfnRelayControl     
+ |  |  |       
+ |  |  +- vfMC33812_Init      
+ |  |       
+ |  +- User_Management_Init
+ |  |  | 
+ |  |  +- Fuel_Pump_Controller_Init
+ |  |  |  | 
+ |  |  |  +- vfnRelayControl      (see above)
+ |  |  |     
+ |  |  +- vfnO2H_On           
+ |  |  |    
+ |  |  +- Update_Modifiers    
+ |  |       
+ |  +- Data_Management_Init
+ |  |  | 
+ |  |  +- vfnMAP_Init         
+ |  |  |    
+ |  |  +- vfnTPS_Init         
+ |  |  |    
+ |  |  +- vfnVBAT_Init        
+ |  |  |    
+ |  |  +- vfnENGSTOPSW_Init   
+ |  |  |    
+ |  |  +- vfnMIL_Init         
+ |  |  |  | 
+ |  |  |  +- vfnMIL_Off          
+ |  |  |       
+ |  |  +- vfnO2H_Init         
+ |  |     | 
+ |  |     +- vfnO2H_On            (see above)
+ |  |        
+ |  +- Engine_Management_Init
+ |  |  | 
+ |  |  +- vfnInit_Crank_Sensing
+ |  |  |  | 
+ |  |  |  +- vfnTimerModule_Init 
+ |  |  |       
+ |  |  +- vfnGoTo_Crank_FirstEdge
+ |  |  |    
+ |  |  +- vfnSet_Fuel_Controller
+ |  |  |  | 
+ |  |  |  +- vfnUpdate_Current_Fuel1_Params
+ |  |  |       
+ |  |  +- vfnSet_Spark_Controller
+ |  |       
+ |  +- vfnScheduler_Start  
+ |  |    
+ |  +- vfnTask_Scheduler   
+ |     | 
+ |     +- Engine_Management   
+ |     |  | 
+ |     |  +- vfnFuel1_Start      
+ |     |  |  | 
+ |     |  |  +- vfnCalc_Fuel_Start  
+ |     |  |     | 
+ |     |  |     +- u16Read_Fuel_Pulse_Angle_Map
+ |     |  |        | 
+ |     |  |        +- u16Interpolation    
+ |     |  |        |    
+ |     |  |        +- u16Rev_Interpolation
+ |     |  |             
+ |     |  +- vfnFuel1_Pulse      
+ |     |  |  | 
+ |     |  |  +- u16Calc_Fuel_Pulse_Width
+ |     |  |     | 
+ |     |  |     +- u16Read_Fuel_Pulse_Width_Map
+ |     |  |        | 
+ |     |  |        +- u16Interpolation     (see above)
+ |     |  |        |  
+ |     |  |        +- u16Rev_Interpolation (see above)
+ |     |  |           
+ |     |  +- vfnSpark1_Start     
+ |     |  |  | 
+ |     |  |  +- u16Calc_Spark_Start 
+ |     |  |     | 
+ |     |  |     +- u16Read_Spark_Map   
+ |     |  |        | 
+ |     |  |        +- u16Interpolation     (see above)
+ |     |  |        |  
+ |     |  |        +- u16Rev_Interpolation (see above)
+ |     |  |           
+ |     |  +- vfnSpark1_Dwell     
+ |     |     | 
+ |     |     +- vfnCalc_Spark_Dwell 
+ |     |          
+ |     +- Data_Management     
+ |     |  | 
+ |     |  +- vfnVBAT_Monitoring  
+ |     |  |  | 
+ |     |  |  +- vfnVBAT_ADC_Filter  
+ |     |  |       
+ |     |  +- vfnTPS_Monitoring   
+ |     |  |  | 
+ |     |  |  +- vfnTPS_ADC_Filter   
+ |     |  |     | 
+ |     |  |     +- _LSHRU              
+ |     |  |          
+ |     |  +- vfnENGSTOPSW_Monitoring
+ |     |     | 
+ |     |     +- vfnENGSTOPSW_Filter 
+ |     |          
+ |     +- vfn_Update_Crank_Speed
+ |     |  | 
+ |     |  +- Safety_Check        
+ |     |  |    
+ |     |  +- vfnSet_PWM_Duty_Cycle
+ |     |       
+ |     +- User_Management     
+ |        | 
+ |        +- _CASE_CHECKED_BYTE  
+ |        |    
+ |        +- MIL_Init            
+ |        |  | 
+ |        |  +- MIL_Set             
+ |        |       
+ |        +- Load_Calculate      
+ |        |    
+ |        +- vfnGoto_OVERRUN     
+ |        |  | 
+ |        |  +- vfnSet_Fuel_Controller (see above)
+ |        |  |  
+ |        |  +- Fuel_Pump_Controller_Init (see above)
+ |        |     
+ |        +- vfnGoto_START       
+ |        |  | 
+ |        |  +- vfnSet_Fuel_Controller (see above)
+ |        |  |  
+ |        |  +- vfnSet_Spark_Controller (see above)
+ |        |  |  
+ |        |  +- Fuel_Pump_Controller_Init (see above)
+ |        |     
+ |        +- vfnGoto_RUN         
+ |        |  | 
+ |        |  +- vfnSet_Fuel_Controller (see above)
+ |        |  |  
+ |        |  +- vfnSet_Spark_Controller (see above)
+ |        |     
+ |        +- Get_Injector1_Fault 
+ |        |    
+ |        +- Get_Ignition1_Fault 
+ |        |    
+ |        +- vfnGoto_STOP        
+ |        |  | 
+ |        |  +- vfnSet_Fuel_Controller (see above)
+ |        |  |  
+ |        |  +- vfnSet_Spark_Controller (see above)
+ |        |  |  
+ |        |  +- vfnSchedule_Spark1_Pulse
+ |        |  |  | 
+ |        |  |  +- vfnUpdate_Current_Spark1_Params
+ |        |  |  |    
+ |        |  |  +- vfnDisable_Spark1_Timer
+ |        |  |       
+ |        |  +- vfnSchedule_Fuel1_Pulse
+ |        |  |  | 
+ |        |  |  +- vfnUpdate_Current_Fuel1_Params (see above)
+ |        |  |  |  
+ |        |  |  +- vfnDisable_Fuel1_Timer
+ |        |  |       
+ |        |  +- vfnFuel_Direct_Control
+ |        |  |    
+ |        |  +- vfnSpark_Direct_Control
+ |        |  |    
+ |        |  +- Fuel_Pump_Controller_Init (see above)
+ |        |     
+ |        +- Update_Modifiers     (see above)
+ |        |  
+ |        +- Fuel_Pump_Controller
+ |        |  | 
+ |        |  +- vfnRelayControl      (see above)
+ |        |     
+ |        +- MIL_Set              (see above)
+ |        |  
+ |        +- RPM_Calculate       
+ |        |  | 
+ |        |  +- _LDIVU              
+ |        |     | 
+ |        |     +- _lDivMod            
+ |        |          
+ |        +- MIL_Clear           
+ |        |    
+ |        +- Safety_Check         (see above)
+ |           
+ +- _Startup            
+    | 
+    +- Init                
+    |    
+    +- main                 (see above)
+       
+ vectors             
+ | 
+ +- Dummy_D_Isr         
+ |    
+ +- Data_Management_Analogs
+ |    
+ +- Data_Management_Digitals
+ |    
+ +- ATD0_conversion_complete
+ |    
+ +- Crank_State_Machine_Isr
+ |  | 
+ |  +- _CASE_CHECKED       
+ |  |    
+ |  +- u8Calculate_Tooth_Period
+ |  |    
+ |  +- vfnTooth_Period_Store
+ |  |    
+ |  +- vfnSet_Period_Timeout
+ |  |  | 
+ |  |  +- _LDIVU               (see above)
+ |  |     
+ |  +- u8Valid_Period      
+ |  |  | 
+ |  |  +- _LDIVU               (see above)
+ |  |     
+ |  +- u8Missing_Tooth_Gap 
+ |  |  | 
+ |  |  +- _LSHL               
+ |  |  |    
+ |  |  +- _LDIVU               (see above)
+ |  |  |  
+ |  |  +- _LCMP               
+ |  |       
+ |  +- vfnGoTo_Crank_FirstEdge (see above)
+ |  |  
+ |  +- u8Tooth_After_Gap   
+ |  |  | 
+ |  |  +- _LSHL                (see above)
+ |  |  |  
+ |  |  +- _LDIVU               (see above)
+ |  |  |  
+ |  |  +- _LCMP                (see above)
+ |  |     
+ |  +- vfnIncrement_Teeth_Counter
+ |  |    
+ |  +- vfnMAP_Monitoring   
+ |  |    
+ |  +- vfnGoTo_SYNCHRONIZED_4C
+ |  |  | 
+ |  |  +- vfnSpark_4C_Convert 
+ |  |  |    
+ |  |  +- vfnFuel_4C_Convert  
+ |  |       
+ |  +- vfnSpark1_Counter_Reset
+ |  |    
+ |  +- vfnSchedule_Spark1_Pulse (see above)
+ |  |  
+ |  +- vfnSchedule_Fuel1_Pulse (see above)
+ |     
+ +- Crank_Missing_Tooth_Isr
+ |  | 
+ |  +- vfnSet_Period_Timeout (see above)
+ |  |  
+ |  +- vfnSchedule_Spark1_Pulse (see above)
+ |  |  
+ |  +- vfnSchedule_Fuel1_Pulse (see above)
+ |     
+ +- Crank_Timeout_Isr   
+ |  | 
+ |  +- vfnGoTo_Crank_FirstEdge (see above)
+ |     
+ +- Spark1_Control_Isr  
+ |  | 
+ |  +- vfnUpdate_Current_Spark1_Params (see above)
+ |     
+ +- Fuel1_Control_Isr   
+ |  | 
+ |  +- vfnUpdate_Current_Fuel1_Params (see above)
+ |     
+ +- Scheduler_RTI_Isr   
+ |    
+ +- _Startup             (see above)
+ |  
+ +- Clock_Monitor_Isr   
+      
+*********************************************************************************************
+STATISTIC SECTION
+---------------------------------------------------------------------------------------------
+
+ExeFile:
+--------
+Number of blocks to be downloaded: 7
+Total size of all blocks to be downloaded: 7566
+

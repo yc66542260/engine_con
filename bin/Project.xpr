@@ -1,0 +1,3 @@
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "RAW_ADC"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "u16Current_Fuel1_Pulse"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "u16Next_Fuel1_Pulse"
